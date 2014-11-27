@@ -1,0 +1,116 @@
+1,"Parvo virus canino tipo 1","Virus",NULL
+2,"Parvo virus canino tipo 2","Virus",NULL
+3,"Rabia","Virus",NULL
+4,"Bronquitis","Virus",NULL
+5,"Parainfluenza","Virus",NULL
+6,"Adenovirus canino tipo 2","Virus",NULL
+7,"Herpes canino tipo 1","Virus",NULL
+8,"Hepatitis canina","Virus",NULL
+9,"Coronavirus canino","Virus",NULL
+10,"Papilomatosis","Virus",NULL
+11,"Distemper canino","Virus",NULL
+12,"Leptosposis ","Bacteria",NULL
+13,"Otitis infecciosa","Dermica",NULL
+14,"Alergias cutaneas","Dermica",NULL
+15,"Alergia","Dermica",NULL
+16,"Alopecia postparto","Dermica",NULL
+17,"Complejo penfigo","Dermica",NULL
+18,"Dermatitis alergica atopica","Dermica",NULL
+19,"Dermatitis alergica por pulgas","Dermica",NULL
+20,"Miasis","Dermica",NULL
+21,"Otitis","Dermica",NULL
+22,"Otohematoma","Dermica",NULL
+23,"Picaduras de insectos","Dermica",NULL
+24,"Quemaduras","Dermica",NULL
+25,"Reaccion alergica aguda","Dermica",NULL
+26,"Dermatomicosis","Dermica",NULL
+27,"Dermatitis alergica por pulgas","Dermica",NULL
+28,"Ancylostomiasis","Parasitos",NULL
+29,"Ascaridiasis","Parasitos",NULL
+30,"Blastomicosis","Parasitos",NULL
+31,"Candida albicans","Parasitos",NULL
+32,"Coccidiosis","Parasitos",NULL
+33,"Dirofilariasis","Parasitos",NULL
+34,"Garrapatas","Parasitos",NULL
+35,"Giardias","Parasitos",NULL
+36,"Malassezia pachydermatis","Parasitos",NULL
+37,"Pediculosis","Parasitos",NULL
+38,"Pulgas","Parasitos",NULL
+39,"Sarcocistosis","Parasitos",NULL
+40,"Sarnas","Parasitos",NULL
+41,"Transmision de tenias por pulgas","Parasitos",NULL
+42,"Trichuris","Parasitos",NULL
+43,"Dermatomicosis","Parasitos",NULL
+44,"Hidatidosis","Parasitos",NULL
+45,"Lehismaniosis","Parasitos",NULL
+46,"Tenias","Parasitos",NULL
+47,"Triquinosis","Parasitos",NULL
+48,"Ehrlichiosis Canina","Parasitos",NULL
+49,"Dirofilariasis","Parasitos",NULL
+50,"Intoxicacion por Medicamentos humanos","Intoxicacion",NULL
+51,"Intoxicacion por Insecticidas","Intoxicacion",NULL
+52,"Intoxicacion por Medicamentos veterinarios","Intoxicacion",NULL
+53,"Intoxicacion por Productos de limpieza para el hogar","Intoxicacion",NULL
+54,"Intoxicacion por Herbicidas","Intoxicacion",NULL
+55,"Intoxicacion por Chocolate","Intoxicacion",NULL
+56,"Intoxicacion por Productos de mantenimiento del hogar","Intoxicacion",NULL
+57,"Intoxicacion por Abonos y fertilizantes","Intoxicacion",NULL
+58,"Intoxicacion por raticidas","Intoxicacion",NULL
+59,"Displasia coxofemoral","Osteomusculares",NULL
+60,"Displasia del codo","Osteomusculares",NULL
+61,"Sindrome de Wobble","Osteomusculares",NULL
+62,"Traumatismo por atropello","Osteomusculares",NULL
+63,"Triquinosis","Osteomusculares",NULL
+64,"Ascaridiasis","Trastornos gastrointestinales y glandulas anexas",NULL
+65,"Coccidiosis","Trastornos gastrointestinales y glandulas anexas",NULL
+66,"Giardias","Trastornos gastrointestinales y glandulas anexas",NULL
+67,"Trichuris","Trastornos gastrointestinales y glandulas anexas",NULL
+68,"Cirrosis","Trastornos gastrointestinales y glandulas anexas",NULL
+69,"Gastroenteritis","Trastornos gastrointestinales y glandulas anexas",NULL
+70,"Halitosis","Trastornos gastrointestinales y glandulas anexas",NULL
+71,"Pancreatitis","Trastornos gastrointestinales y glandulas anexas",NULL
+72,"Lupus eritematoso","Trastornos gastrointestinales y glandulas anexas",NULL
+73,"Obstrucciones intestinales ","Trastornos gastrointestinales y glandulas anexas",NULL
+74,"Enteropatias inflamatorias","Trastorno inmunologico",NULL
+75,"Eclampsia","Transtorno metabolicos",NULL
+76,"Epifora","Ocular",NULL
+77,"Glaucoma","Ocular",NULL
+78,"Cataratas","Ocular",NULL
+79,"Laringotraqueitis","Trastorno Respiratorio",NULL
+80,"Falsa gestacion","Trastorno urogenitales",NULL
+81,"Piometra o metritis","Trastorno urogenitales",NULL
+82,"Sindrome uremico","Trastorno urogenitales",NULL
+83,"Vaginitis de la cachorra","Trastorno urogenitales",NULL
+84,"Hiperplasia prostatica","Trastorno urogenitales",NULL
+85,"Prostatitis","Trastorno urogenitales",NULL
+86,"Anemia","Trastornos hematologicos",NULL
+87,"Anemia hemolitica autoinmune","Trastornos hematologicos",NULL
+88,"Epilepsia","Trastorno nervioso",NULL
+89,"Hidrocefalia","Trastorno nervioso",NULL
+90,"Cancer de traque","Cancer",NULL
+91,"Cancer de pulmon","Cancer",NULL
+92,"Cancer de  estomago","Cancer",NULL
+93,"Cancer colo-rectar","Cancer",NULL
+94,"Cancer de timo","Cancer",NULL
+95,"Cancer de labio y cavidad bucal","Cancer",NULL
+96,"Cancer hepatico","Cancer",NULL
+97,"linfoma","Cancer",NULL
+98,"Neoplasia testicular","Tumor",NULL
+99,"Melanomas","Tumor",NULL
+100,"Papiloma Cutaneo","Tumor",NULL
+101,"Carcinoma de celulas basales","Tumor",NULL
+102,"Carcinoma de celulas escamosas","Tumor",NULL
+103,"Insulinoma","Tumor",NULL
+104,"Queratosis actinica","Tumor",NULL
+105,"Fibrosarcoma","Tumor",NULL
+106,"Lipoma","Tumor",NULL
+107,"Liposarcoma","Tumor",NULL
+108,"Mastocitoma","Tumor",NULL
+109,"Histiocitoma","Tumor",NULL
+110,"Linfosarcoma cutaneo","Tumor",NULL
+111,"Quistes foliculares ","Tumor",NULL
+112,"Tumores mamarios","Tumor",NULL
+113,"Tumor de traquea","Tumor",NULL
+114,"Tumor mamario","Tumor",NULL
+115,"Parasitos intestinales","Parasitos",NULL
+116,"hipoavitaminosis","Deficiencia de Vitaminas",NULL
