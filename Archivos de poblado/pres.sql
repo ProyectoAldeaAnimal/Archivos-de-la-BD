@@ -1,44 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 4.1.12
--- http://www.phpmyadmin.net
---
--- Servidor: 127.0.0.1
--- Tiempo de generación: 16-11-2014 a las 21:30:18
--- Versión del servidor: 5.6.16
--- Versión de PHP: 5.5.11
 
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
-
---
--- Base de datos: `aldeaanimal`
---
-
--- --------------------------------------------------------
-
---
--- Estructura de tabla para la tabla `pres`
---
-
-CREATE TABLE IF NOT EXISTS `pres` (
-  `ID_PRES` int(11) NOT NULL COMMENT 'Identificador Ñnico para el tipo de atenci',
-  `ID_TIPO_PRES` int(11) NOT NULL,
-  `NOMBRE_PRES` varchar(40) NOT NULL COMMENT 'Nombre de referencia por el cual se puede identificar al tipo de atenci',
-  `NUMERO_BLOQUES` int(11) NOT NULL COMMENT 'NÑmero de bloques que dura la atenciÑn. Los bloques son definidos por la clÑnica, estos son de 15 min.',
-  `PRECIO` int(11) DEFAULT NULL,
-  PRIMARY KEY (`ID_PRES`),
-  KEY `FK_PUEDE_SER16` (`ID_TIPO_PRES`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Entidad que posee informaciÑn general de los diferentes tipo';
-
---
--- Volcado de datos para la tabla `pres`
---
 
 INSERT INTO `pres` (`ID_PRES`, `ID_TIPO_PRES`, `NOMBRE_PRES`, `NUMERO_BLOQUES`, `PRECIO`) VALUES
 (1, 1, 'Consulta general', 1, 7000),
@@ -84,17 +44,3 @@ INSERT INTO `pres` (`ID_PRES`, `ID_TIPO_PRES`, `NOMBRE_PRES`, `NUMERO_BLOQUES`, 
 (41, 0, 'Drenaje glándulas anales', 1, 3000),
 (42, 0, 'Atención peluquería completa', 9, 20000);
 
-
---
--- Restricciones para tablas volcadas
---
-
---
--- Filtros para la tabla `pres`
---
-ALTER TABLE `pres`
-  ADD CONSTRAINT `FK_PUEDE_SER16` FOREIGN KEY (`ID_TIPO_PRES`) REFERENCES `tipo_pres` (`ID_TIPO_PRES`);
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
