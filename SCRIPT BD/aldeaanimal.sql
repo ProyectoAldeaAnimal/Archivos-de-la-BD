@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 06-12-2014 a las 03:41:26
+-- Tiempo de generación: 08-12-2014 a las 09:14:05
 -- Versión del servidor: 5.6.16
 -- Versión de PHP: 5.5.11
 
@@ -74,95 +74,95 @@ CREATE TABLE IF NOT EXISTS `acos` (
   `lft` int(10) DEFAULT NULL,
   `rght` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=109 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=125 ;
 
 --
 -- Volcado de datos para la tabla `acos`
 --
 
 INSERT INTO `acos` (`id`, `parent_id`, `model`, `foreign_key`, `alias`, `lft`, `rght`) VALUES
-(1, NULL, NULL, NULL, 'controllers', 1, 214),
-(3, 1, NULL, NULL, 'Vets', 2, 51),
-(4, 1, NULL, NULL, 'Mas', 52, 59),
-(5, 1, NULL, NULL, 'Users', 60, 63),
-(6, 1, NULL, NULL, 'Agendas', 64, 71),
-(7, 5, NULL, NULL, 'add', 61, 62),
-(8, 4, NULL, NULL, 'edit', 53, 54),
-(9, 6, NULL, NULL, 'index', 65, 66),
-(10, 6, NULL, NULL, 'add', 67, 68),
-(11, 1, NULL, NULL, 'OfertaHors', 72, 75),
-(12, 11, NULL, NULL, 'agregarOfertaHoraria', 73, 74),
-(13, 1, NULL, NULL, 'Oferta_hors', 76, 79),
-(14, 13, NULL, NULL, 'agregarOfertaHoraria', 77, 78),
-(15, 4, NULL, NULL, 'add', 55, 56),
-(16, 1, NULL, NULL, 'Atencions', 80, 89),
-(17, 16, NULL, NULL, 'add', 81, 82),
-(18, 1, NULL, NULL, 'OrdenExes', 90, 93),
-(19, 18, NULL, NULL, 'add', 91, 92),
-(20, 1, NULL, NULL, 'OrdenHosps', 94, 99),
-(21, 20, NULL, NULL, 'add', 95, 96),
-(22, 1, NULL, NULL, 'OrdenInts', 100, 103),
-(23, 22, NULL, NULL, 'add', 101, 102),
-(24, 1, NULL, NULL, 'Inters', 104, 107),
-(25, 24, NULL, NULL, 'add', 105, 106),
-(26, 1, NULL, NULL, 'Hosps', 108, 111),
-(27, 20, NULL, NULL, 'add', 97, 98),
-(28, 26, NULL, NULL, 'add', 109, 110),
-(29, 1, NULL, NULL, 'Pats', 112, 119),
-(30, 29, NULL, NULL, 'index', 113, 114),
-(31, 29, NULL, NULL, 'view', 115, 116),
-(32, 29, NULL, NULL, 'edit', 117, 118),
-(33, 1, NULL, NULL, 'Farmacos', 120, 129),
-(34, 33, NULL, NULL, 'view', 121, 122),
-(35, 33, NULL, NULL, 'edit', 123, 124),
-(36, 33, NULL, NULL, 'edit', 125, 126),
-(37, 33, NULL, NULL, 'add', 127, 128),
-(38, 1, NULL, NULL, 'Farmacos', 130, 133),
-(39, 38, NULL, NULL, 'index', 131, 132),
-(42, 41, NULL, NULL, 'index', 137, 138),
-(43, 1, NULL, NULL, 'Tipodeints', 140, 149),
-(44, 43, NULL, NULL, 'index', 141, 142),
-(45, 43, NULL, NULL, 'add', 143, 144),
-(46, 43, NULL, NULL, 'edit', 145, 146),
-(47, 43, NULL, NULL, 'view', 147, 148),
-(48, 1, NULL, NULL, 'Tipoexes', 150, 159),
-(49, 48, NULL, NULL, 'index', 151, 152),
-(50, 48, NULL, NULL, 'add', 153, 154),
-(51, 48, NULL, NULL, 'edit', 155, 156),
-(52, 48, NULL, NULL, 'view', 157, 158),
+(1, NULL, NULL, NULL, 'controllers', 1, 246),
+(3, 1, NULL, NULL, 'Vets', 2, 67),
+(4, 1, NULL, NULL, 'Mas', 68, 75),
+(5, 1, NULL, NULL, 'Users', 76, 79),
+(6, 1, NULL, NULL, 'Agendas', 80, 89),
+(7, 5, NULL, NULL, 'add', 77, 78),
+(8, 4, NULL, NULL, 'edit', 69, 70),
+(9, 6, NULL, NULL, 'index', 81, 82),
+(10, 6, NULL, NULL, 'add', 83, 84),
+(11, 1, NULL, NULL, 'OfertaHors', 90, 93),
+(12, 11, NULL, NULL, 'agregarOfertaHoraria', 91, 92),
+(13, 1, NULL, NULL, 'Oferta_hors', 94, 97),
+(14, 13, NULL, NULL, 'agregarOfertaHoraria', 95, 96),
+(15, 4, NULL, NULL, 'add', 71, 72),
+(16, 1, NULL, NULL, 'Atencions', 98, 107),
+(17, 16, NULL, NULL, 'add', 99, 100),
+(18, 1, NULL, NULL, 'OrdenExes', 108, 111),
+(19, 18, NULL, NULL, 'add', 109, 110),
+(20, 1, NULL, NULL, 'OrdenHosps', 112, 117),
+(21, 20, NULL, NULL, 'add', 113, 114),
+(22, 1, NULL, NULL, 'OrdenInts', 118, 121),
+(23, 22, NULL, NULL, 'add', 119, 120),
+(24, 1, NULL, NULL, 'Inters', 122, 125),
+(25, 24, NULL, NULL, 'add', 123, 124),
+(26, 1, NULL, NULL, 'Hosps', 126, 129),
+(27, 20, NULL, NULL, 'add', 115, 116),
+(28, 26, NULL, NULL, 'add', 127, 128),
+(29, 1, NULL, NULL, 'Pats', 130, 137),
+(30, 29, NULL, NULL, 'index', 131, 132),
+(31, 29, NULL, NULL, 'view', 133, 134),
+(32, 29, NULL, NULL, 'edit', 135, 136),
+(33, 1, NULL, NULL, 'Farmacos', 138, 147),
+(34, 33, NULL, NULL, 'view', 139, 140),
+(35, 33, NULL, NULL, 'edit', 141, 142),
+(36, 33, NULL, NULL, 'edit', 143, 144),
+(37, 33, NULL, NULL, 'add', 145, 146),
+(38, 1, NULL, NULL, 'Farmacos', 148, 151),
+(39, 38, NULL, NULL, 'index', 149, 150),
+(42, 41, NULL, NULL, 'index', 155, 156),
+(43, 1, NULL, NULL, 'Tipodeints', 158, 167),
+(44, 43, NULL, NULL, 'index', 159, 160),
+(45, 43, NULL, NULL, 'add', 161, 162),
+(46, 43, NULL, NULL, 'edit', 163, 164),
+(47, 43, NULL, NULL, 'view', 165, 166),
+(48, 1, NULL, NULL, 'Tipoexes', 168, 177),
+(49, 48, NULL, NULL, 'index', 169, 170),
+(50, 48, NULL, NULL, 'add', 171, 172),
+(51, 48, NULL, NULL, 'edit', 173, 174),
+(52, 48, NULL, NULL, 'view', 175, 176),
 (53, 3, NULL, NULL, 'homeVet', 3, 4),
 (54, 3, NULL, NULL, 'homeAdministrador', 5, 6),
-(55, 1, NULL, NULL, 'Pres', 160, 179),
-(56, 55, NULL, NULL, 'index', 161, 162),
-(57, 55, NULL, NULL, 'add', 163, 164),
-(58, 55, NULL, NULL, 'edit', 165, 166),
-(59, 55, NULL, NULL, 'view', 167, 168),
-(60, 4, NULL, NULL, 'view', 57, 58),
-(61, 55, NULL, NULL, 'delete', 169, 170),
-(62, 1, NULL, NULL, 'Recmeds', 180, 193),
-(63, 62, NULL, NULL, 'select_meds', 181, 182),
-(64, 62, NULL, NULL, 'index', 183, 184),
-(65, 62, NULL, NULL, 'add', 185, 186),
-(66, 62, NULL, NULL, 'view', 187, 188),
-(67, 16, NULL, NULL, 'index', 83, 84),
-(68, 16, NULL, NULL, 'view', 85, 86),
-(69, 62, NULL, NULL, 'recetas_mas', 189, 190),
-(70, 62, NULL, NULL, 'view2', 191, 192),
-(71, 16, NULL, NULL, 'view2', 87, 88),
-(72, 6, NULL, NULL, 'delete', 69, 70),
-(73, 1, NULL, NULL, 'Procs', 194, 201),
-(74, 73, NULL, NULL, 'index', 195, 196),
-(75, 73, NULL, NULL, 'view', 197, 198),
-(76, 73, NULL, NULL, 'add', 199, 200),
+(55, 1, NULL, NULL, 'Pres', 178, 197),
+(56, 55, NULL, NULL, 'index', 179, 180),
+(57, 55, NULL, NULL, 'add', 181, 182),
+(58, 55, NULL, NULL, 'edit', 183, 184),
+(59, 55, NULL, NULL, 'view', 185, 186),
+(60, 4, NULL, NULL, 'view', 73, 74),
+(61, 55, NULL, NULL, 'delete', 187, 188),
+(62, 1, NULL, NULL, 'Recmeds', 198, 211),
+(63, 62, NULL, NULL, 'select_meds', 199, 200),
+(64, 62, NULL, NULL, 'index', 201, 202),
+(65, 62, NULL, NULL, 'add', 203, 204),
+(66, 62, NULL, NULL, 'view', 205, 206),
+(67, 16, NULL, NULL, 'index', 101, 102),
+(68, 16, NULL, NULL, 'view', 103, 104),
+(69, 62, NULL, NULL, 'recetas_mas', 207, 208),
+(70, 62, NULL, NULL, 'view2', 209, 210),
+(71, 16, NULL, NULL, 'view2', 105, 106),
+(72, 6, NULL, NULL, 'delete', 85, 86),
+(73, 1, NULL, NULL, 'Procs', 212, 219),
+(74, 73, NULL, NULL, 'index', 213, 214),
+(75, 73, NULL, NULL, 'view', 215, 216),
+(76, 73, NULL, NULL, 'add', 217, 218),
 (77, 3, NULL, NULL, 'HomeVets', 7, 8),
 (78, 3, NULL, NULL, 'HomeVet', 9, 10),
-(79, 1, NULL, NULL, 'Pars', 202, 209),
-(80, 79, NULL, NULL, 'index', 203, 204),
-(81, 79, NULL, NULL, 'add', 205, 206),
-(82, 79, NULL, NULL, 'edit', 207, 208),
+(79, 1, NULL, NULL, 'Pars', 220, 227),
+(80, 79, NULL, NULL, 'index', 221, 222),
+(81, 79, NULL, NULL, 'add', 223, 224),
+(82, 79, NULL, NULL, 'edit', 225, 226),
 (83, 3, NULL, NULL, 'HomeAdministrador', 11, 12),
-(84, 1, NULL, NULL, 'Tipomas', 210, 213),
-(85, 84, NULL, NULL, 'add', 211, 212),
+(84, 1, NULL, NULL, 'Tipomas', 228, 231),
+(85, 84, NULL, NULL, 'add', 229, 230),
 (86, 3, NULL, NULL, 'miAgenda', 13, 14),
 (87, 3, NULL, NULL, 'homeVet', 15, 16),
 (88, 3, NULL, NULL, 'seleccion_cliente', 17, 18),
@@ -181,11 +181,27 @@ INSERT INTO `acos` (`id`, `parent_id`, `model`, `foreign_key`, `alias`, `lft`, `
 (101, 3, NULL, NULL, 'gestion', 43, 44),
 (102, 3, NULL, NULL, 'gestion_cliente', 45, 46),
 (103, 3, NULL, NULL, 'gestion_vet', 47, 48),
-(104, 55, NULL, NULL, 'add', 171, 172),
-(105, 55, NULL, NULL, 'edit', 173, 174),
-(106, 55, NULL, NULL, 'view', 175, 176),
-(107, 55, NULL, NULL, 'delete', 177, 178),
-(108, 3, NULL, NULL, 'logout', 49, 50);
+(104, 55, NULL, NULL, 'add', 189, 190),
+(105, 55, NULL, NULL, 'edit', 191, 192),
+(106, 55, NULL, NULL, 'view', 193, 194),
+(107, 55, NULL, NULL, 'delete', 195, 196),
+(108, 3, NULL, NULL, 'logout', 49, 50),
+(109, 3, NULL, NULL, 'view', 51, 52),
+(110, 3, NULL, NULL, 'edit', 53, 54),
+(111, 3, NULL, NULL, 'cambiar_pass', 55, 56),
+(112, 3, NULL, NULL, 'mis_datos', 57, 58),
+(113, 3, NULL, NULL, 'misDatos', 59, 60),
+(114, 3, NULL, NULL, 'cambiar_pass_admin', 61, 62),
+(115, 1, NULL, NULL, 'TipoPres', 232, 235),
+(116, 115, NULL, NULL, 'index', 233, 234),
+(117, 1, NULL, NULL, 'Tipo_pres', 236, 245),
+(118, 117, NULL, NULL, 'index', 237, 238),
+(119, 117, NULL, NULL, 'add', 239, 240),
+(120, 117, NULL, NULL, 'edit', 241, 242),
+(121, 117, NULL, NULL, 'delete', 243, 244),
+(122, 6, NULL, NULL, 'rechazar', 87, 88),
+(123, 3, NULL, NULL, 'atencion', 63, 64),
+(124, 3, NULL, NULL, 'deshabilitado', 65, 66);
 
 -- --------------------------------------------------------
 
@@ -203,18 +219,139 @@ CREATE TABLE IF NOT EXISTS `agenda` (
   KEY `FK_ES_DEL_TIPO` (`ID_PRES`),
   KEY `FK_SELECCIONA` (`ID_VET`),
   KEY `FK_SOLICITA` (`ID_MAS`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa una solicitud de atenci?n de un usuar' AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa una solicitud de atenci?n de un usuar' AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `agenda`
 --
 
 INSERT INTO `agenda` (`ID_AGENDA`, `ID_MAS`, `ID_VET`, `ID_PRES`, `ESTADO_AGENDA`) VALUES
-(4, 1, 2, 2, 'A'),
-(6, 4, 2, 1, 'A'),
-(8, 1, 2, 1, 'A'),
-(9, 2, 2, 1, 'A'),
-(11, 1, 2, 1, 'P');
+(1, 9, 2, 1, 'P'),
+(2, 3, 2, 1, 'P');
+
+--
+-- Disparadores `agenda`
+--
+DROP TRIGGER IF EXISTS `TR_ESTADO_AGENDA`;
+DELIMITER //
+CREATE TRIGGER `TR_ESTADO_AGENDA` AFTER UPDATE ON `agenda`
+ FOR EACH ROW BEGIN
+DECLARE SOLICITUD INT;
+DECLARE OH_INICIAL INT;
+DECLARE BLOQUE INT;
+DECLARE I INT;
+DECLARE PIVOT INT;
+DECLARE RUT varchar(20);
+DECLARE DATOSD varchar(500);
+DECLARE DATOSA varchar(500);
+/*SELECCIONA EL BLOQUE ASOCIADO A LA PRESTACION DEL BLOQUE*/
+SET BLOQUE = (SELECT P.NUMERO_BLOQUES FROM agenda as a,pres as p WHERE a.ID_PRES = p.ID_PRES and a.ID_AGENDA = OLD.ID_AGENDA and a.ID_PRES = OLD.ID_PRES);
+/*SELECCIONA LA AGENDA QUE SE MODIFICO*/
+SET SOLICITUD=OLD.ID_AGENDA;
+SET RUT = (SELECT V.RUT_VET FROM vet as V  WHERE NEW.ID_VET = V.ID_VET LIMIT 1);
+/*BUSCA LA OFERTA HORARIA ASOCIADA AL BLOQUE , EL ID INICIAL*/
+SET OH_INICIAL = 
+(SELECT oh.ID_OFERTA_HOR 
+FROM bloq_agen as ba , oferta_hor as oh
+WHERE SOLICITUD=ba.ID_AGENDA and  oh.ID_OFERTA_HOR = ba.ID_OFERTA_HOR 
+ORDER BY oh.ID_OFERTA_HOR
+LIMIT 1);
+SET DATOSD= (
+	SELECT CONCAT(
+		CAST(NEW.ID_AGENDA AS CHAR),',',
+		CAST(NEW.ID_MAS AS CHAR),',',
+		CAST(NEW.ID_VET AS CHAR),',',
+		CAST(NEW.ID_PRES AS CHAR),',',
+		NEW.ESTADO_AGENDA));
+        
+SET DATOSA= (
+	SELECT CONCAT(
+		CAST(OLD.ID_AGENDA AS CHAR),',',
+		CAST(OLD.ID_MAS AS CHAR),',',
+		CAST(OLD.ID_VET AS CHAR),',',
+		CAST(OLD.ID_PRES AS CHAR),',',
+		OLD.ESTADO_AGENDA));
+
+
+/*SI EL BLOQUE SE CAMBIO A ACEPTADO*/
+IF(NEW.ESTADO_AGENDA='A') THEN
+/*SI SOLO TIENE ASOCIADA UN BLOQUE*/
+IF(BLOQUE=1) THEN
+UPDATE `oferta_hor`as oh SET `ESTADO_AGENDAMIENTO`=NEW.ESTADO_AGENDA
+WHERE oh.ID_OFERTA_HOR = OH_INICIAL;
+/*ACTUALIZA LA TABLA LOG SQL*/
+INSERT INTO `log_sql`(`ID_LOG`, `RUT_USUARIO`, `TABLA`, `INSTRUCCION`, `DATOS_ANTES`, `DATOS_DESPUES`, `FECHA_MOD`) VALUES (NULL,RUT,'OFERTA_HOR','UPDATE',DATOSA,DATOSD,CURRENT_TIMESTAMP());
+/*SI TIENE ASOCIADO MAS DE UN BLOQUE*/
+ELSE 
+SET I=0;
+SET PIVOT = OH_INICIAL;
+WHILE I < BLOQUE DO
+UPDATE `oferta_hor`as oh SET `ESTADO_AGENDAMIENTO`='A'
+WHERE oh.ID_OFERTA_HOR = PIVOT;
+INSERT INTO `log_sql`(`ID_LOG`, `RUT_USUARIO`, `TABLA`, `INSTRUCCION`, `DATOS_ANTES`, `DATOS_DESPUES`, `FECHA_MOD`) VALUES (NULL,RUT,'OFERTA_HOR','UPDATE',DATOSA,DATOSD,CURRENT_TIMESTAMP());
+SET I=I+1;
+SET PIVOT=PIVOT+1;
+END WHILE;
+END IF;
+ELSE 
+INSERT INTO `log_sql`(`ID_LOG`, `RUT_USUARIO`, `TABLA`, `INSTRUCCION`, `DATOS_ANTES`, `DATOS_DESPUES`, `FECHA_MOD`) VALUES (NULL,RUT,'OFERTA_HOR','UPDATE',DATOSA,DATOSD,CURRENT_TIMESTAMP());
+END IF;
+
+
+END
+//
+DELIMITER ;
+DROP TRIGGER IF EXISTS `TR_LOG_AGENDA_DEL`;
+DELIMITER //
+CREATE TRIGGER `TR_LOG_AGENDA_DEL` BEFORE DELETE ON `agenda`
+ FOR EACH ROW BEGIN
+DECLARE DATOSA varchar(500);
+DECLARE DATOSD varchar(500);
+DECLARE RUT varchar(20);
+DECLARE INST varchar(20); 
+DECLARE FECHA timestamp;
+DECLARE TABLA varchar(20);
+SET DATOSA= (SELECT CONCAT(CAST(OLD.ID_AGENDA AS CHAR),',',CAST(OLD.ID_MAS AS CHAR),',',CAST(OLD.ID_VET AS CHAR),',',CAST(OLD.ID_PRES AS CHAR),',',OLD.ESTADO_AGENDA));
+SET INST= 'DELETE';
+SET FECHA = CURRENT_TIMESTAMP();
+SET TABLA = 'AGENDA';
+SET RUT = (SELECT C.RUT_CLI FROM cli as C,mas as M,agenda as A  WHERE  OLD.ID_MAS = M.ID_MAS and M.ID = C.ID LIMIT 1);
+INSERT INTO `log_sql`(`ID_LOG`, `RUT_USUARIO`, `TABLA`, `INSTRUCCION`, `DATOS_ANTES`, `DATOS_DESPUES`, `FECHA_MOD`) VALUES (NULL,RUT,TABLA,INST,DATOSA,NULL,FECHA);
+
+END
+//
+DELIMITER ;
+DROP TRIGGER IF EXISTS `TR_LOG_AGENDA_INS`;
+DELIMITER //
+CREATE TRIGGER `TR_LOG_AGENDA_INS` AFTER INSERT ON `agenda`
+ FOR EACH ROW BEGIN 
+
+DECLARE DATOSA varchar(500);
+DECLARE DATOSD varchar(500);
+DECLARE RUT varchar(20);
+DECLARE INST varchar(20); 
+DECLARE FECHA timestamp;
+DECLARE TABLA varchar(20);
+DECLARE TEMP int;
+
+
+SET TEMP= NEW.ID_AGENDA;
+
+
+
+SET DATOSD= (SELECT CONCAT(CAST(TEMP AS CHAR),',',CAST(NEW.ID_MAS AS CHAR),',',CAST(NEW.ID_VET AS CHAR),',',CAST(NEW.ID_PRES AS CHAR),',',NEW.ESTADO_AGENDA));
+
+
+
+SET INST= 'INSERT';
+SET FECHA = CURRENT_TIMESTAMP();
+SET TABLA = 'AGENDA';
+SET RUT = (SELECT C.RUT_CLI FROM cli as C,mas as M,agenda as A  WHERE  NEW.ID_MAS = M.ID_MAS and M.ID = C.ID LIMIT 1);
+INSERT INTO `log_sql`(`ID_LOG`, `RUT_USUARIO`, `TABLA`, `INSTRUCCION`, `DATOS_ANTES`, `DATOS_DESPUES`, `FECHA_MOD`) VALUES (NULL,RUT,TABLA,INST,NULL,DATOSD,FECHA);
+
+END
+//
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -259,7 +396,7 @@ CREATE TABLE IF NOT EXISTS `aros_acos` (
   `_delete` varchar(2) COLLATE utf8_spanish_ci NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   UNIQUE KEY `ARO_ACO_KEY` (`aro_id`,`aco_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=112 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci AUTO_INCREMENT=138 ;
 
 --
 -- Volcado de datos para la tabla `aros_acos`
@@ -326,7 +463,7 @@ INSERT INTO `aros_acos` (`id`, `aro_id`, `aco_id`, `_create`, `_read`, `_update`
 (60, 3, 77, '-1', '-1', '-1', '-1'),
 (61, 3, 78, '-1', '-1', '-1', '-1'),
 (62, 3, 80, '1', '1', '1', '1'),
-(63, 3, 81, '1', '1', '1', '1'),
+(63, 3, 81, '-1', '-1', '-1', '-1'),
 (64, 3, 82, '-1', '-1', '-1', '-1'),
 (65, 3, 6, '-1', '-1', '-1', '-1'),
 (66, 2, 83, '-1', '-1', '-1', '-1'),
@@ -374,7 +511,33 @@ INSERT INTO `aros_acos` (`id`, `aro_id`, `aco_id`, `_create`, `_read`, `_update`
 (108, 3, 25, '-1', '-1', '-1', '-1'),
 (109, 3, 28, '-1', '-1', '-1', '-1'),
 (110, 3, 108, '1', '1', '1', '1'),
-(111, 2, 108, '1', '1', '1', '1');
+(111, 2, 108, '1', '1', '1', '1'),
+(112, 2, 109, '1', '1', '1', '1'),
+(113, 3, 109, '-1', '-1', '-1', '-1'),
+(114, 2, 110, '1', '1', '1', '1'),
+(115, 3, 110, '-1', '-1', '-1', '-1'),
+(116, 3, 111, '-1', '-1', '-1', '-1'),
+(117, 2, 111, '1', '1', '1', '1'),
+(118, 2, 112, '-1', '-1', '-1', '-1'),
+(119, 3, 112, '1', '1', '1', '1'),
+(120, 3, 113, '1', '1', '1', '1'),
+(121, 2, 114, '-1', '-1', '-1', '-1'),
+(122, 3, 114, '1', '1', '1', '1'),
+(123, 3, 116, '1', '1', '1', '1'),
+(124, 3, 118, '1', '1', '1', '1'),
+(125, 2, 118, '-1', '-1', '-1', '-1'),
+(126, 2, 119, '-1', '-1', '-1', '-1'),
+(127, 2, 120, '-1', '-1', '-1', '-1'),
+(128, 2, 121, '-1', '-1', '-1', '-1'),
+(129, 3, 119, '1', '1', '1', '1'),
+(130, 3, 120, '1', '1', '1', '1'),
+(131, 3, 121, '1', '1', '1', '1'),
+(132, 3, 122, '-1', '-1', '-1', '-1'),
+(133, 2, 122, '1', '1', '1', '1'),
+(134, 2, 123, '1', '1', '1', '1'),
+(135, 3, 123, '-1', '-1', '-1', '-1'),
+(136, 3, 124, '-1', '-1', '-1', '-1'),
+(137, 2, 124, '1', '1', '1', '1');
 
 -- --------------------------------------------------------
 
@@ -386,7 +549,7 @@ CREATE TABLE IF NOT EXISTS `atencion` (
   `ID_ATENCION` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador ?nico de referencia a la atenci',
   `ID_PRES` int(11) NOT NULL COMMENT 'Identificador ?nico para el tipo de atenci',
   `ID_MAS` int(11) NOT NULL COMMENT 'Identificador ?nico para la mascota.',
-  `ID_TIPO_PRES` int(11) DEFAULT NULL COMMENT 'identificador ?nico para el tipo de prestaci',
+  `ID_VET` int(11) NOT NULL COMMENT 'identificador ?nico para el tipo de prestaci',
   `FECHA_ATENCION` datetime NOT NULL COMMENT 'Fecha en la cual se realiz? la antenci?n m?dica.',
   `PESO` float DEFAULT NULL COMMENT 'Peso que registr? la mascota en la anteci',
   `TEMPERATURA` float DEFAULT NULL COMMENT 'Temperatura que registr? la mascota en la atenci',
@@ -395,32 +558,20 @@ CREATE TABLE IF NOT EXISTS `atencion` (
   `DIAGNOSTICO` varchar(200) DEFAULT NULL COMMENT 'Diagn?stico del m?dico veterinario en base a lo observado en la atenci',
   PRIMARY KEY (`ID_ATENCION`),
   KEY `FK_ES_UN2` (`ID_PRES`),
-  KEY `FK_REALIZA2` (`ID_TIPO_PRES`),
+  KEY `FK_REALIZA2` (`ID_VET`),
   KEY `FK_REGISTRA2` (`ID_MAS`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que posee los datos generales que se registran en ca' AUTO_INCREMENT=36 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que posee los datos generales que se registran en ca' AUTO_INCREMENT=10 ;
 
 --
 -- Volcado de datos para la tabla `atencion`
 --
 
-INSERT INTO `atencion` (`ID_ATENCION`, `ID_PRES`, `ID_MAS`, `ID_TIPO_PRES`, `FECHA_ATENCION`, `PESO`, `TEMPERATURA`, `MOTIVO`, `ANAMNESIS`, `DIAGNOSTICO`) VALUES
-(2, 1, 1, 1, '2014-11-29 21:22:00', 1, 1, 'sadasdsad', 'wqeqweqweqwe', 'sadasdasdasda'),
-(20, 1, 1, 1, '2014-12-02 19:53:00', NULL, NULL, '', '', ''),
-(21, 1, 1, 1, '2014-12-02 21:50:00', NULL, NULL, '', '', ''),
-(22, 1, 1, 1, '2014-12-02 22:54:00', NULL, NULL, '', '', ''),
-(23, 36, 2, 0, '2014-12-03 12:38:00', NULL, NULL, '', '', ''),
-(24, 11, 4, 1, '2014-12-03 13:02:00', NULL, NULL, '', '', ''),
-(25, 1, 6, 1, '2014-12-04 19:42:00', NULL, NULL, '', '', ''),
-(26, 2, 3, 3, '2014-12-04 20:15:00', 50, NULL, '', '', ''),
-(27, 1, 4, 1, '2014-12-04 21:13:00', 50, 50, '', '', ''),
-(28, 1, 8, 1, '2014-12-04 23:16:00', 1, NULL, '', '', ''),
-(29, 1, 7, 1, '2014-12-04 19:25:00', NULL, NULL, '', '', ''),
-(30, 1, 6, 1, '2014-12-05 00:13:00', NULL, NULL, '', '', ''),
-(31, 4, 4, 3, '2014-12-05 01:08:00', 20, 13, '', '', ''),
-(32, 1, 6, 1, '2014-12-05 15:04:00', NULL, NULL, '', '', ''),
-(33, 1, 6, 1, '2014-12-05 18:02:00', NULL, NULL, '', '', ''),
-(34, 12, 7, 1, '2014-12-05 23:00:00', NULL, NULL, '', '', ''),
-(35, 37, 7, 0, '2014-12-05 23:01:00', NULL, NULL, '', '', '');
+INSERT INTO `atencion` (`ID_ATENCION`, `ID_PRES`, `ID_MAS`, `ID_VET`, `FECHA_ATENCION`, `PESO`, `TEMPERATURA`, `MOTIVO`, `ANAMNESIS`, `DIAGNOSTICO`) VALUES
+(4, 1, 3, 2, '2014-12-08 02:28:00', 15, 31, 'Consulta', 'El perro está con tos durante todo el día', 'Tos constante, \r\nExceso de temperatura \r\n'),
+(5, 3, 9, 2, '2014-12-08 03:03:00', 20, 25, 'Consulta', 'Viene por vacuna octuple', 'Sin diagnóstico'),
+(6, 1, 10, 2, '2014-12-08 03:09:00', 5, 10, 'Consulta', 'Esta decaído ', 'Posee un tumor en la traquea.'),
+(7, 1, 9, 2, '2014-12-08 03:31:00', 20, 30, 'Consulta', 'Perro tose y jadea todo el día.', 'El perro esta resfriado y con una alta temperatura.'),
+(9, 1, 2, 2, '2014-12-08 05:07:00', 20, 30, 'Consulta', 'Perro con tos ', 'El perro está resfriado');
 
 -- --------------------------------------------------------
 
@@ -440,11 +591,8 @@ CREATE TABLE IF NOT EXISTS `bloq_agen` (
 --
 
 INSERT INTO `bloq_agen` (`ID_AGENDA`, `ID_OFERTA_HOR`) VALUES
-(4, 509),
-(6, 512),
-(11, 935),
-(9, 947),
-(8, 1163);
+(1, 87),
+(2, 150);
 
 -- --------------------------------------------------------
 
@@ -455,8 +603,8 @@ INSERT INTO `bloq_agen` (`ID_AGENDA`, `ID_OFERTA_HOR`) VALUES
 CREATE TABLE IF NOT EXISTS `cal` (
   `ID_CAL` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador ?nico para el bloque del calendario.',
   `FECHA_CAL` date NOT NULL COMMENT 'Fecha del calendario gen?rico para relacionarlo con un veterinario.',
-  `DIA_TRABAJADO` tinyint(1) DEFAULT NULL COMMENT 'Indica si el dia corresponde o no a un dia laboral. Si es 1 el dia ser? considerado como trabajado, si es 0 corresponde a un dia que no es trabajado o feriado laboral ',
-  `NOMBRE_DIA` varchar(2) DEFAULT NULL COMMENT 'Indica el nombre del dia, Lunes, Martes , Mi?rcoles, Jueves , Viernes,S?bado y Domingo',
+  `DIA_TRABAJADO` tinyint(1) NOT NULL COMMENT 'Indica si el dia corresponde o no a un dia laboral. Si es 1 el dia ser? considerado como trabajado, si es 0 corresponde a un dia que no es trabajado o feriado laboral ',
+  `NOMBRE_DIA` varchar(2) NOT NULL COMMENT 'Indica el nombre del dia, Lunes, Martes , Mi?rcoles, Jueves , Viernes,S?bado y Domingo',
   PRIMARY KEY (`ID_CAL`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que posee datos representativos de bloques de horari' AUTO_INCREMENT=2558 ;
 
@@ -3045,34 +3193,35 @@ CREATE TABLE IF NOT EXISTS `cli` (
   `PASSWORD_CLI` varchar(50) NOT NULL,
   PRIMARY KEY (`ID`),
   KEY `FK_PERTENECE2` (`ID_GROUP`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa un cliente dentro del sistema, esta p' AUTO_INCREMENT=43 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa un cliente dentro del sistema, esta p' AUTO_INCREMENT=23 ;
 
 --
 -- Volcado de datos para la tabla `cli`
 --
 
 INSERT INTO `cli` (`ID`, `ID_GROUP`, `RUT_CLI`, `NOMBRE_CLI`, `APELLIDO_PCLI`, `APELLIDO_MCLI`, `MAIL_CLI`, `TEL_CLI`, `FECHA_REGISTRO_CLI`, `DIR_CLI`, `HABILITADO_CLI`, `PASSWORD_CLI`) VALUES
-(22, 1, '10.728.565-2', 'RUBEN', 'GUERRERO', 'ACEVEDO', 'micorreo17@yopmail.com', '93554324', '2014-11-14', 'RIQUELME 218 DP C', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(23, 1, '12.882.268-2', 'MARIA TERESA', 'DOMIC', 'ARANGUIZ', 'micorreo13@yopmail.com', '83452352', '2014-11-14', 'ISMAEL V VERGARA 514 DP 42', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(24, 1, '13.660.589-5', 'CRISTIAN', 'ABARCA', 'CASTILLO', 'micorreo01@yopmail.com', '91234567', '2014-11-14', 'COMPAÑIA JESUS 227 DP 3-B', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(25, 1, '14.158.895-8', 'FRANCISCO', 'CARCAMO', 'SOTO', 'micorreo11@yopmail.com', '82352624', '2014-11-14', 'MONEDA 3090 DPTO 102', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(26, 1, '14.536.496-5', 'JONATHAN', 'GOMEZ', 'GUTIERREZ', 'micorreo19@yopmail.com', '83264442', '2014-11-14', 'EYZAGUIRRE 1077', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(27, 1, '14.757.500-9', 'JORGE', 'ROMAN', '', 'micorreo02@yopmail.com', '81234567', '2014-11-14', 'TARAPACA 752', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(28, 1, '15.353.552-3', 'MARJORIE', 'HERNANDEZ', 'ZUÑIGA', 'micorreo20@yopmail.com', '72452522', '2014-11-14', 'CABILDO 7219', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(29, 1, '15.380.217-3', 'FRANCISCO', 'MARTI', 'RAVANALES', 'micorreo05@yopmail.com', '98765432', '2014-11-14', 'BULNES 409', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(30, 1, '16.339.894-K', 'AARON', 'ACUÑA', 'PEREZ', 'micorreo08@yopmail.com', '91233413', '2014-11-14', 'PJ DEL MERCADO 1853 V COMERCIO', 0, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(31, 1, '17.925.891-9', 'Daniel', 'Vargas', 'Mattheus', 'daniel.vargas@usach.cl', '23231231232', '2014-11-14', 'Pasaje del Mercado 1836 Villa Comercio', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(32, 1, '18.209.963-5', 'MARIA', 'HERRERA', 'ABARCA', 'micorreo06@yopmail.com', '86543123', '2014-11-14', 'FRANKLIN 1330 PJE. VICUÑA 2404-A', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(33, 1, '18.256.799-K', 'BRUNO', 'BAEZ', 'LOPEZ', 'micorreo10@yopmail.com', '73452345', '2014-11-14', 'MATURANA 477 DP 304', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(34, 1, '18.641.830-1', 'CAMILA', 'ROMAN', 'GARCIA', 'micorreo03@yopmail.com', '71234567', '2014-11-13', 'ESPERANZA 651 DEP 19', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(35, 1, '2.635.377-7', 'ERCILIA', 'HERRAZ', 'BRAVO', 'micorreo07@yopmail.com', '75341632', '2014-11-14', 'MAIPU 547 DP 300', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(36, 1, '21.445.964-7', 'FEI', 'GUO', '', 'micorreo18@yopmail.com', '72353437', '2014-11-14', 'RODULFO PHILLIPI 51', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(37, 1, '21.824.189-1', 'FANNY', 'DIAZ', 'REYES', 'micorreo12@yopmail.com', '225160550', '2014-11-14', 'COQUIMBO 1383', 0, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(38, 1, '21.930.126-K', 'ALEJANDRA', 'DOMINE', 'MARIA', 'micorreo14@yopmail.com', '72353544', '2014-11-14', 'BOMBERO SALAS NÑ 1369, DEPTO. 203', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(39, 1, '3.556.975-8', 'ALICIA', 'DOMINGUEZ', 'BASIEROS', 'micorreo15@yopmail.com', '82521348', '2014-11-14', 'VICTOR MANUEL 2170', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(40, 1, '3.593.139-2', 'JORGE', 'GUERRA', 'VASQUEZ', 'micorreo16@yopmail.com', '92355443', '2014-11-14', 'STO DOMINGO 916', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(41, 1, '3.791.343-K', 'MIRTA', 'BENAVIDES', 'MARTINEZ', 'micorreo04@yopmail.com', '61234567', '2014-11-11', 'BULNES 1182 BL 9 ESC 2534 DP 12', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(42, 1, '9.787.769-6', 'ORIETTA', 'AGUILAR', 'VILLAGRA', 'micorreo09@yopmail.com', '96545452', '2014-11-14', 'VICTORIA 1472', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b');
+(1, 1, '10.728.565-2', 'RUBEN', 'GUERRERO', 'ACEVEDO', 'micorreo17@yopmail.com', '93554324', '2014-11-14', 'RIQUELME 218 DP C', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(2, 1, '12.882.268-2', 'MARIA TERESA', 'DOMIC', 'ARANGUIZ', 'micorreo13@yopmail.com', '83452352', '2014-11-14', 'ISMAEL V VERGARA 514 DP 42', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(3, 1, '13.660.589-5', 'CRISTIAN', 'ABARCA', 'CASTILLO', 'micorreo01@yopmail.com', '91234567', '2014-11-14', 'COMPAÑIA JESUS 227 DP 3-B', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(4, 1, '14.158.895-8', 'FRANCISCO', 'CARCAMO', 'SOTO', 'micorreo11@yopmail.com', '82352624', '2014-11-14', 'MONEDA 3090 DPTO 102', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(5, 1, '14.536.496-5', 'JONATHAN', 'GOMEZ', 'GUTIERREZ', 'micorreo19@yopmail.com', '83264442', '2014-11-14', 'EYZAGUIRRE 1077', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(6, 1, '14.757.500-9', 'JORGE', 'ROMAN', '', 'micorreo02@yopmail.com', '81234567', '2014-11-14', 'TARAPACA 752', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(7, 1, '15.353.552-3', 'MARJORIE', 'HERNANDEZ', 'ZUÑIGA', 'micorreo20@yopmail.com', '72452522', '2014-11-14', 'CABILDO 7219', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(8, 1, '15.380.217-3', 'FRANCISCO', 'MARTI', 'RAVANALES', 'micorreo05@yopmail.com', '98765432', '2014-11-14', 'BULNES 409', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(9, 1, '16.339.894-K', 'AARON', 'ACUÑA', 'PEREZ', 'micorreo08@yopmail.com', '91233413', '2014-11-14', 'PJ DEL MERCADO 1853 V COMERCIO', 0, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(10, 1, '17.925.891-9', 'DANIEL', 'VARGAS', 'MATTHEUS', 'daniel.vargas@usach.cl', '232312312', '2014-11-14', 'Pasaje del Mercado 1836 Villa Comercio', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(11, 1, '18.209.963-5', 'MARIA', 'HERRERA', 'ABARCA', 'micorreo06@yopmail.com', '86543123', '2014-11-14', 'FRANKLIN 1330 PJE. VICUÑA 2404-A', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(12, 1, '18.256.799-K', 'BRUNO', 'BAEZ', 'LOPEZ', 'micorreo10@yopmail.com', '73452345', '2014-11-14', 'MATURANA 477 DP 304', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(13, 1, '18.641.830-1', 'CAMILA', 'ROMAN', 'GARCIA', 'micorreo03@yopmail.com', '71234567', '2014-11-13', 'ESPERANZA 651 DEP 19', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(14, 1, '2.635.377-7', 'ERCILIA', 'HERRAZ', 'BRAVO', 'micorreo07@yopmail.com', '75341632', '2014-11-14', 'MAIPU 547 DP 300', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(15, 1, '21.445.964-7', 'FEI', 'GUO', '', 'micorreo18@yopmail.com', '72353437', '2014-11-14', 'RODULFO PHILLIPI 51', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(16, 1, '21.824.189-1', 'FANNY', 'DIAZ', 'REYES', 'micorreo12@yopmail.com', '225160550', '2014-11-14', 'COQUIMBO 1383', 0, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(17, 1, '21.930.126-K', 'ALEJANDRA', 'DOMINE', 'MARIA', 'micorreo14@yopmail.com', '72353544', '2014-11-14', 'BOMBERO SALAS NÑ 1369, DEPTO. 203', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(18, 1, '3.556.975-8', 'ALICIA', 'DOMINGUEZ', 'BASIEROS', 'micorreo15@yopmail.com', '82521348', '2014-11-14', 'VICTOR MANUEL 2170', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(19, 1, '3.593.139-2', 'JORGE', 'GUERRA', 'VASQUEZ', 'micorreo16@yopmail.com', '92355443', '2014-11-14', 'STO DOMINGO 916', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(20, 1, '3.791.343-K', 'MIRTA', 'BENAVIDES', 'MARTINEZ', 'micorreo04@yopmail.com', '61234567', '2014-11-11', 'BULNES 1182 BL 9 ESC 2534 DP 12', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(21, 1, '9.787.769-6', 'ORIETTA', 'AGUILAR', 'VILLAGRA', 'micorreo09@yopmail.com', '96545452', '2014-11-14', 'VICTORIA 1472', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(22, 1, '17.770.075-4', 'MATIAS', 'QUINTEROS', 'JARA', 'matias.quinteros@usach.cl', '99107930', '2014-12-08', 'Pasaje Polpaico 3056', 1, '40bd001563085fc35165329ea1ff5c5ecbdbbeef');
 
 -- --------------------------------------------------------
 
@@ -4520,17 +4669,11 @@ CREATE TABLE IF NOT EXISTS `far_rec` (
 --
 
 INSERT INTO `far_rec` (`ID_FAR`, `ID_RECETA`, `POSOLOGIA`) VALUES
-(1, 1, '1 pastilla cada 20 horas'),
-(1, 16, '1 pastilla cada 8 horas'),
-(1, 17, '1 pastilla cada 8 horas'),
-(1, 18, ''),
-(1, 20, ''),
-(3, 2, 'Aplicada en la consulta'),
-(20, 19, 'Aplicada en consulta'),
-(25, 17, '2 pastillas cada 8 horas'),
-(26, 3, '1 cucharada todos los días'),
-(57, 1, '1 pastilla cada 20 horas'),
-(473, 1, '1 pastilla cada 20 horas');
+(1, 2, 'Cada 8 horas por 5 días'),
+(25, 2, 'Cada 8 horas por 3 días'),
+(57, 4, '1 pastilla cada 8 horas'),
+(445, 3, ''),
+(530, 4, '1 pastilla cada 4 horas');
 
 -- --------------------------------------------------------
 
@@ -4552,14 +4695,16 @@ CREATE TABLE IF NOT EXISTS `ficha` (
 --
 
 INSERT INTO `ficha` (`ID_MAS`, `ESTERILIZACION`, `FECHA_ESTERILIZACION`, `FECHA_INGRESO`, `OBS_ESTERILIZACION`) VALUES
-(1, NULL, NULL, '2014-11-27', NULL),
-(2, NULL, NULL, '2014-11-27', NULL),
-(3, NULL, NULL, '2014-11-27', NULL),
-(4, NULL, NULL, '2014-11-27', NULL),
-(5, NULL, NULL, '2014-11-28', NULL),
-(6, NULL, NULL, '2014-12-04', NULL),
-(7, NULL, NULL, '2014-12-04', NULL),
-(8, NULL, NULL, '2014-12-04', NULL);
+(1, NULL, NULL, '2014-12-07', NULL),
+(2, 1, '2014-12-08', '2014-12-07', 'Cirugía realizada en la clínica'),
+(3, NULL, NULL, '2014-12-07', NULL),
+(4, NULL, NULL, '2014-12-07', NULL),
+(5, NULL, NULL, '2014-12-07', NULL),
+(6, NULL, NULL, '2014-12-07', NULL),
+(7, NULL, NULL, '2014-12-07', NULL),
+(8, NULL, NULL, '2014-12-07', NULL),
+(9, NULL, NULL, '2014-12-08', NULL),
+(10, NULL, NULL, '2014-12-08', NULL);
 
 -- --------------------------------------------------------
 
@@ -4591,11 +4736,11 @@ INSERT INTO `groups` (`ID_GRUPO`, `NOMBREGRUPO`) VALUES
 
 CREATE TABLE IF NOT EXISTS `hosp` (
   `ID_HOSP` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador  ?nico para la hospitalizaci',
-  `ID_ORDEN_HOSP` int(11) DEFAULT NULL COMMENT 'Identificador ?nico para la odern de hospitalizaci',
-  `ID_VET` int(11) DEFAULT NULL,
+  `ID_ORDEN_HOSP` int(11) NOT NULL COMMENT 'Identificador ?nico para la odern de hospitalizaci',
+  `ID_VET` int(11) NOT NULL,
   `FECHA_INGRESO_HOSP` datetime NOT NULL COMMENT 'Este atributo indica en que fecha la mascota ingres? a la cl?nica para su hospitalizaci',
   `FECHA_ALTA` datetime DEFAULT NULL COMMENT 'Este atributo indica una la fecha en la cual se di? de alta a la mascota, es decir, puede retirarse del hospital e ir a su casa a descanzar.',
-  `CANIL` varchar(25) NOT NULL COMMENT 'Indica en que canil se encuentra la mascota hospitalizada.',
+  `CANIL` varchar(25) DEFAULT NULL COMMENT 'Indica en que canil se encuentra la mascota hospitalizada.',
   PRIMARY KEY (`ID_HOSP`),
   KEY `FK_ES_ENCARGADO` (`ID_VET`),
   KEY `FK_PUEDE_GENERAR2` (`ID_ORDEN_HOSP`)
@@ -4606,7 +4751,7 @@ CREATE TABLE IF NOT EXISTS `hosp` (
 --
 
 INSERT INTO `hosp` (`ID_HOSP`, `ID_ORDEN_HOSP`, `ID_VET`, `FECHA_INGRESO_HOSP`, `FECHA_ALTA`, `CANIL`) VALUES
-(1, 2, 1, '2014-12-06 03:04:00', '2014-12-06 03:04:00', '');
+(1, 1, 3, '2014-12-08 05:11:00', '2014-12-09 05:11:00', '1');
 
 -- --------------------------------------------------------
 
@@ -5797,21 +5942,78 @@ INSERT INTO `ins_pres` (`ID_PRES`, `ID_INS`, `GASTO_TEO_PRES`) VALUES
 CREATE TABLE IF NOT EXISTS `inter` (
   `ID_INT` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador  ?nico para la Intervenci',
   `ID_ORDEN_INT` int(11) NOT NULL COMMENT 'Identificador ?nico para la orden de intervenci',
-  `ID_VET` int(11) DEFAULT NULL,
+  `ID_VET` int(11) NOT NULL,
   `FECHA_INGRESO_INT` datetime NOT NULL COMMENT 'Fecha en la cual la mascota ingreso al pabell?n de intervenci',
   `FECHA_TERMINO_INT` datetime DEFAULT NULL COMMENT 'Fecha en la cual la intervenci?n termin',
   `OBS_INT` varchar(200) NOT NULL COMMENT 'Todas aquellas observaciones adicionales que el veterinario estime conveniente precisar.',
   PRIMARY KEY (`ID_INT`),
   KEY `FK_PUEDE_GENERAR` (`ID_ORDEN_INT`),
   KEY `FK_REALIZA3` (`ID_VET`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa un registro de una intervenci?n reali' AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa un registro de una intervenci?n reali' AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `inter`
 --
 
 INSERT INTO `inter` (`ID_INT`, `ID_ORDEN_INT`, `ID_VET`, `FECHA_INGRESO_INT`, `FECHA_TERMINO_INT`, `OBS_INT`) VALUES
-(1, 2, 1, '2014-12-06 03:04:00', '2014-12-06 03:04:00', '');
+(1, 1, 3, '2014-12-08 03:11:00', '2014-12-08 05:11:00', 'Se tuvo que hacer la operación inmediatamente debido al estado de la Iguana'),
+(2, 2, 5, '2014-12-08 05:09:00', '2014-12-08 07:09:00', 'Cirugía realizada en la clínica');
+
+--
+-- Disparadores `inter`
+--
+DROP TRIGGER IF EXISTS `TR_ESTERI_INTERV`;
+DELIMITER //
+CREATE TRIGGER `TR_ESTERI_INTERV` AFTER INSERT ON `inter`
+ FOR EACH ROW BEGIN 
+DECLARE INTERVENCION INT;
+DECLARE FECHA DATE;
+DECLARE OBS VARCHAR(200);
+DECLARE ORDEN INT;
+DECLARE TIPO INT;
+DECLARE MASCOTA INT;
+DECLARE Y INT;
+DECLARE PRESTACION INT;
+SET INTERVENCION = (SELECT ID_INT FROM inter WHERE ID_INT=NEW.ID_INT);
+SET OBS = (SELECT OBS_INT FROM inter WHERE ID_INT = INTERVENCION);
+SET FECHA = (SELECT DATE(FECHA_INGRESO_INT) FROM inter WHERE ID_INT =INTERVENCION);
+SET ORDEN = (SELECT ID_ORDEN_INT FROM inter WHERE ID_INT = INTERVENCION);
+SET MASCOTA = (
+	SELECT tm.ID_TIPO_MAS 
+	FROM orden_int as o,atencion as a, mas as m, tipo_mas as tm 
+	WHERE  o.ID_ORDEN_INT = ORDEN and o.ID_ATENCION = a.ID_ATENCION and a.ID_MAS = m.ID_MAS and m.ID_TIPO_MAS = tm.ID_TIPO_MAS
+	LIMIT 1);
+    SET PRESTACION =(
+	SELECT tp.ID_TIPO_PRES 
+	FROM orden_int as oi,atencion as a,pres as p ,tipo_pres as tp
+	WHERE  oi.ID_ORDEN_INT = ORDEN and oi.ID_ATENCION= a.ID_ATENCION and a.ID_PRES = p.ID_PRES and p.ID_TIPO_PRES = tp.ID_TIPO_PRES 
+	LIMIT 1);
+SET TIPO = (SELECT ID_TIPO_INT FROM orden_int WHERE ID_ORDEN_INT = ORDEN);
+IF((MASCOTA=1 or MASCOTA =2)and (TIPO=1 or TIPO=2))
+THEN
+
+SET Y = (SELECT mas.ID_MAS 
+    FROM orden_int, inter,mas, atencion 
+	WHERE 
+    inter.ID_INT IN (SELECT ID_INT FROM inter WHERE ID_INT= NEW.ID_INT)
+                                          and inter.ID_ORDEN_INT = orden_int.ID_ORDEN_INT 
+                                          and orden_int.ID_ATENCION = atencion.ID_ATENCION and 
+                                          atencion.ID_MAS = mas.ID_MAS);
+UPDATE ficha SET ESTERILIZACION =1 ,FECHA_ESTERILIZACION = FECHA,OBS_ESTERILIZACION = OBS   WHERE ficha.ID_MAS = Y;
+ELSEIF (PRESTACION=2)
+THEN 
+SET Y = (SELECT mas.ID_MAS 
+    FROM orden_int, inter,mas, atencion 
+	WHERE 
+    inter.ID_INT IN (SELECT ID_INT FROM inter WHERE ID_INT =NEW.ID_INT)
+                                          and inter.ID_ORDEN_INT = orden_int.ID_ORDEN_INT 
+                                          and orden_int.ID_ATENCION = atencion.ID_ATENCION and 
+                                          atencion.ID_MAS = mas.ID_MAS);
+UPDATE ficha SET ESTERILIZACION =1 ,FECHA_ESTERILIZACION = FECHA,OBS_ESTERILIZACION = OBS   WHERE ficha.ID_MAS = Y;
+END IF;
+END
+//
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -5828,7 +6030,199 @@ CREATE TABLE IF NOT EXISTS `log_sql` (
   `DATOS_DESPUES` varchar(500) DEFAULT NULL COMMENT 'Indica los datos despues de realizar la acci',
   `FECHA_MOD` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT 'Indica la fecha de modificaci',
   PRIMARY KEY (`ID_LOG`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 COMMENT='Entidad que registra todos los cambios en la base de datos' AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que registra todos los cambios en la base de datos' AUTO_INCREMENT=187 ;
+
+--
+-- Volcado de datos para la tabla `log_sql`
+--
+
+INSERT INTO `log_sql` (`ID_LOG`, `RUT_USUARIO`, `TABLA`, `INSTRUCCION`, `DATOS_ANTES`, `DATOS_DESPUES`, `FECHA_MOD`) VALUES
+(1, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '1,343,2,P,11:00:00,11:15:00', '2014-12-08 08:04:55'),
+(2, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '2,343,2,P,11:15:00,11:30:00', '2014-12-08 08:04:55'),
+(3, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '3,343,2,P,11:30:00,11:45:00', '2014-12-08 08:04:55'),
+(4, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '4,343,2,P,11:45:00,12:00:00', '2014-12-08 08:04:56'),
+(5, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '5,343,2,P,12:00:00,12:15:00', '2014-12-08 08:04:56'),
+(6, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '6,343,2,P,12:15:00,12:30:00', '2014-12-08 08:04:56'),
+(7, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '7,343,2,P,12:30:00,12:45:00', '2014-12-08 08:04:56'),
+(8, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '8,343,2,P,12:45:00,13:00:00', '2014-12-08 08:04:56'),
+(9, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '9,343,2,P,13:00:00,13:15:00', '2014-12-08 08:04:56'),
+(10, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '10,343,2,P,13:15:00,13:30:00', '2014-12-08 08:04:56'),
+(11, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '11,343,2,P,13:30:00,13:45:00', '2014-12-08 08:04:56'),
+(12, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '12,343,2,P,13:45:00,14:00:00', '2014-12-08 08:04:56'),
+(13, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '13,343,2,P,14:00:00,14:15:00', '2014-12-08 08:04:56'),
+(14, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '14,343,2,P,14:15:00,14:30:00', '2014-12-08 08:04:56'),
+(15, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '15,343,2,P,14:30:00,14:45:00', '2014-12-08 08:04:56'),
+(16, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '16,343,2,P,14:45:00,15:00:00', '2014-12-08 08:04:56'),
+(17, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '17,343,2,P,15:00:00,15:15:00', '2014-12-08 08:04:56'),
+(18, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '18,343,2,P,15:15:00,15:30:00', '2014-12-08 08:04:57'),
+(19, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '19,343,2,P,15:30:00,15:45:00', '2014-12-08 08:04:57'),
+(20, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '20,343,2,P,15:45:00,16:00:00', '2014-12-08 08:04:57'),
+(21, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '21,343,2,P,16:00:00,16:15:00', '2014-12-08 08:04:57'),
+(22, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '22,343,2,P,16:15:00,16:30:00', '2014-12-08 08:04:57'),
+(23, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '23,343,2,P,16:30:00,16:45:00', '2014-12-08 08:04:57'),
+(24, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '24,343,2,P,16:45:00,17:00:00', '2014-12-08 08:04:57'),
+(25, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '25,343,2,P,17:00:00,17:15:00', '2014-12-08 08:04:57'),
+(26, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '26,343,2,P,17:15:00,17:30:00', '2014-12-08 08:04:57'),
+(27, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '27,343,2,P,17:30:00,17:45:00', '2014-12-08 08:04:57'),
+(28, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '28,343,2,P,17:45:00,18:00:00', '2014-12-08 08:04:57'),
+(29, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '29,343,2,P,18:00:00,18:15:00', '2014-12-08 08:04:57'),
+(30, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '30,343,2,P,18:15:00,18:30:00', '2014-12-08 08:04:57'),
+(31, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '31,343,2,P,18:30:00,18:45:00', '2014-12-08 08:04:57'),
+(32, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '32,343,2,P,18:45:00,19:00:00', '2014-12-08 08:04:57'),
+(33, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '33,343,2,P,19:00:00,19:15:00', '2014-12-08 08:04:57'),
+(34, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '34,343,2,P,19:15:00,19:30:00', '2014-12-08 08:04:57'),
+(35, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '35,343,2,P,19:30:00,19:45:00', '2014-12-08 08:04:58'),
+(36, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '36,343,2,P,19:45:00,20:00:00', '2014-12-08 08:04:58'),
+(37, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '37,343,2,P,20:00:00,20:15:00', '2014-12-08 08:04:58'),
+(38, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '38,343,2,P,20:15:00,20:30:00', '2014-12-08 08:04:58'),
+(39, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '39,343,2,P,20:30:00,20:45:00', '2014-12-08 08:04:58'),
+(40, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '40,343,2,P,20:45:00,21:00:00', '2014-12-08 08:04:58'),
+(41, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '41,344,2,P,11:00:00,11:15:00', '2014-12-08 08:04:58'),
+(42, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '42,344,2,P,11:15:00,11:30:00', '2014-12-08 08:04:58'),
+(43, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '43,344,2,P,11:30:00,11:45:00', '2014-12-08 08:04:58'),
+(44, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '44,344,2,P,11:45:00,12:00:00', '2014-12-08 08:04:58'),
+(45, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '45,344,2,P,12:00:00,12:15:00', '2014-12-08 08:04:58'),
+(46, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '46,344,2,P,12:15:00,12:30:00', '2014-12-08 08:04:58'),
+(47, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '47,344,2,P,12:30:00,12:45:00', '2014-12-08 08:04:58'),
+(48, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '48,344,2,P,12:45:00,13:00:00', '2014-12-08 08:04:58'),
+(49, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '49,344,2,P,13:00:00,13:15:00', '2014-12-08 08:04:58'),
+(50, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '50,344,2,P,13:15:00,13:30:00', '2014-12-08 08:04:58'),
+(51, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '51,344,2,P,13:30:00,13:45:00', '2014-12-08 08:04:58'),
+(52, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '52,344,2,P,13:45:00,14:00:00', '2014-12-08 08:04:59'),
+(53, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '53,344,2,P,14:00:00,14:15:00', '2014-12-08 08:04:59'),
+(54, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '54,344,2,P,14:15:00,14:30:00', '2014-12-08 08:04:59'),
+(55, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '55,344,2,P,14:30:00,14:45:00', '2014-12-08 08:04:59'),
+(56, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '56,344,2,P,14:45:00,15:00:00', '2014-12-08 08:04:59'),
+(57, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '57,344,2,P,15:00:00,15:15:00', '2014-12-08 08:04:59'),
+(58, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '58,344,2,P,15:15:00,15:30:00', '2014-12-08 08:04:59'),
+(59, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '59,344,2,P,15:30:00,15:45:00', '2014-12-08 08:04:59'),
+(60, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '60,344,2,P,15:45:00,16:00:00', '2014-12-08 08:04:59'),
+(61, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '61,344,2,P,16:00:00,16:15:00', '2014-12-08 08:04:59'),
+(62, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '62,344,2,P,16:15:00,16:30:00', '2014-12-08 08:04:59'),
+(63, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '63,344,2,P,16:30:00,16:45:00', '2014-12-08 08:04:59'),
+(64, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '64,344,2,P,16:45:00,17:00:00', '2014-12-08 08:04:59'),
+(65, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '65,344,2,P,17:00:00,17:15:00', '2014-12-08 08:04:59'),
+(66, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '66,344,2,P,17:15:00,17:30:00', '2014-12-08 08:04:59'),
+(67, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '67,344,2,P,17:30:00,17:45:00', '2014-12-08 08:04:59'),
+(68, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '68,344,2,P,17:45:00,18:00:00', '2014-12-08 08:04:59'),
+(69, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '69,344,2,P,18:00:00,18:15:00', '2014-12-08 08:05:00'),
+(70, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '70,344,2,P,18:15:00,18:30:00', '2014-12-08 08:05:00'),
+(71, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '71,344,2,P,18:30:00,18:45:00', '2014-12-08 08:05:00'),
+(72, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '72,344,2,P,18:45:00,19:00:00', '2014-12-08 08:05:00'),
+(73, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '73,344,2,P,19:00:00,19:15:00', '2014-12-08 08:05:00'),
+(74, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '74,344,2,P,19:15:00,19:30:00', '2014-12-08 08:05:00'),
+(75, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '75,344,2,P,19:30:00,19:45:00', '2014-12-08 08:05:00'),
+(76, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '76,344,2,P,19:45:00,20:00:00', '2014-12-08 08:05:00'),
+(77, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '77,344,2,P,20:00:00,20:15:00', '2014-12-08 08:05:00'),
+(78, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '78,344,2,P,20:15:00,20:30:00', '2014-12-08 08:05:00'),
+(79, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '79,344,2,P,20:30:00,20:45:00', '2014-12-08 08:05:00'),
+(80, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '80,344,2,P,20:45:00,21:00:00', '2014-12-08 08:05:00'),
+(81, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '81,345,2,P,11:00:00,11:15:00', '2014-12-08 08:05:00'),
+(82, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '82,345,2,P,11:15:00,11:30:00', '2014-12-08 08:05:00'),
+(83, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '83,345,2,P,11:30:00,11:45:00', '2014-12-08 08:05:00'),
+(84, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '84,345,2,P,11:45:00,12:00:00', '2014-12-08 08:05:00'),
+(85, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '85,345,2,P,12:00:00,12:15:00', '2014-12-08 08:05:00'),
+(86, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '86,345,2,P,12:15:00,12:30:00', '2014-12-08 08:05:00'),
+(87, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '87,345,2,P,12:30:00,12:45:00', '2014-12-08 08:05:01'),
+(88, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '88,345,2,P,12:45:00,13:00:00', '2014-12-08 08:05:01'),
+(89, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '89,345,2,P,13:00:00,13:15:00', '2014-12-08 08:05:01'),
+(90, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '90,345,2,P,13:15:00,13:30:00', '2014-12-08 08:05:01'),
+(91, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '91,345,2,P,13:30:00,13:45:00', '2014-12-08 08:05:01'),
+(92, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '92,345,2,P,13:45:00,14:00:00', '2014-12-08 08:05:01'),
+(93, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '93,345,2,P,14:00:00,14:15:00', '2014-12-08 08:05:01'),
+(94, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '94,345,2,P,14:15:00,14:30:00', '2014-12-08 08:05:01'),
+(95, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '95,345,2,P,14:30:00,14:45:00', '2014-12-08 08:05:01'),
+(96, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '96,345,2,P,14:45:00,15:00:00', '2014-12-08 08:05:01'),
+(97, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '97,345,2,P,15:00:00,15:15:00', '2014-12-08 08:05:01'),
+(98, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '98,345,2,P,15:15:00,15:30:00', '2014-12-08 08:05:01'),
+(99, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '99,345,2,P,15:30:00,15:45:00', '2014-12-08 08:05:01'),
+(100, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '100,345,2,P,15:45:00,16:00:00', '2014-12-08 08:05:01'),
+(101, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '101,345,2,P,16:00:00,16:15:00', '2014-12-08 08:05:01'),
+(102, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '102,345,2,P,16:15:00,16:30:00', '2014-12-08 08:05:01'),
+(103, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '103,345,2,P,16:30:00,16:45:00', '2014-12-08 08:05:01'),
+(104, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '104,345,2,P,16:45:00,17:00:00', '2014-12-08 08:05:02'),
+(105, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '105,345,2,P,17:00:00,17:15:00', '2014-12-08 08:05:02'),
+(106, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '106,345,2,P,17:15:00,17:30:00', '2014-12-08 08:05:02'),
+(107, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '107,345,2,P,17:30:00,17:45:00', '2014-12-08 08:05:02'),
+(108, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '108,345,2,P,17:45:00,18:00:00', '2014-12-08 08:05:02'),
+(109, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '109,345,2,P,18:00:00,18:15:00', '2014-12-08 08:05:02'),
+(110, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '110,345,2,P,18:15:00,18:30:00', '2014-12-08 08:05:02'),
+(111, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '111,345,2,P,18:30:00,18:45:00', '2014-12-08 08:05:02'),
+(112, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '112,345,2,P,18:45:00,19:00:00', '2014-12-08 08:05:02'),
+(113, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '113,345,2,P,19:00:00,19:15:00', '2014-12-08 08:05:02'),
+(114, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '114,345,2,P,19:15:00,19:30:00', '2014-12-08 08:05:02'),
+(115, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '115,345,2,P,19:30:00,19:45:00', '2014-12-08 08:05:02'),
+(116, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '116,345,2,P,19:45:00,20:00:00', '2014-12-08 08:05:02'),
+(117, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '117,345,2,P,20:00:00,20:15:00', '2014-12-08 08:05:02'),
+(118, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '118,345,2,P,20:15:00,20:30:00', '2014-12-08 08:05:02'),
+(119, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '119,345,2,P,20:30:00,20:45:00', '2014-12-08 08:05:02'),
+(120, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '120,345,2,P,20:45:00,21:00:00', '2014-12-08 08:05:02'),
+(121, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '121,346,2,P,11:00:00,11:15:00', '2014-12-08 08:05:02'),
+(122, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '122,346,2,P,11:15:00,11:30:00', '2014-12-08 08:05:02'),
+(123, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '123,346,2,P,11:30:00,11:45:00', '2014-12-08 08:05:02'),
+(124, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '124,346,2,P,11:45:00,12:00:00', '2014-12-08 08:05:03'),
+(125, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '125,346,2,P,12:00:00,12:15:00', '2014-12-08 08:05:03'),
+(126, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '126,346,2,P,12:15:00,12:30:00', '2014-12-08 08:05:03'),
+(127, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '127,346,2,P,12:30:00,12:45:00', '2014-12-08 08:05:03'),
+(128, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '128,346,2,P,12:45:00,13:00:00', '2014-12-08 08:05:03'),
+(129, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '129,346,2,P,13:00:00,13:15:00', '2014-12-08 08:05:03'),
+(130, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '130,346,2,P,13:15:00,13:30:00', '2014-12-08 08:05:03'),
+(131, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '131,346,2,P,13:30:00,13:45:00', '2014-12-08 08:05:03'),
+(132, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '132,346,2,P,13:45:00,14:00:00', '2014-12-08 08:05:03'),
+(133, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '133,346,2,P,14:00:00,14:15:00', '2014-12-08 08:05:03'),
+(134, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '134,346,2,P,14:15:00,14:30:00', '2014-12-08 08:05:03'),
+(135, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '135,346,2,P,14:30:00,14:45:00', '2014-12-08 08:05:03'),
+(136, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '136,346,2,P,14:45:00,15:00:00', '2014-12-08 08:05:03'),
+(137, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '137,346,2,P,15:00:00,15:15:00', '2014-12-08 08:05:03'),
+(138, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '138,346,2,P,15:15:00,15:30:00', '2014-12-08 08:05:03'),
+(139, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '139,346,2,P,15:30:00,15:45:00', '2014-12-08 08:05:03'),
+(140, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '140,346,2,P,15:45:00,16:00:00', '2014-12-08 08:05:03'),
+(141, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '141,346,2,P,16:00:00,16:15:00', '2014-12-08 08:05:03'),
+(142, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '142,346,2,P,16:15:00,16:30:00', '2014-12-08 08:05:03'),
+(143, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '143,346,2,P,16:30:00,16:45:00', '2014-12-08 08:05:03'),
+(144, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '144,346,2,P,16:45:00,17:00:00', '2014-12-08 08:05:03'),
+(145, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '145,346,2,P,17:00:00,17:15:00', '2014-12-08 08:05:03'),
+(146, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '146,346,2,P,17:15:00,17:30:00', '2014-12-08 08:05:03'),
+(147, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '147,346,2,P,17:30:00,17:45:00', '2014-12-08 08:05:03'),
+(148, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '148,346,2,P,17:45:00,18:00:00', '2014-12-08 08:05:03'),
+(149, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '149,346,2,P,18:00:00,18:15:00', '2014-12-08 08:05:03'),
+(150, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '150,346,2,P,18:15:00,18:30:00', '2014-12-08 08:05:03'),
+(151, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '151,346,2,P,18:30:00,18:45:00', '2014-12-08 08:05:03'),
+(152, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '152,346,2,P,18:45:00,19:00:00', '2014-12-08 08:05:03'),
+(153, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '153,346,2,P,19:00:00,19:15:00', '2014-12-08 08:05:03'),
+(154, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '154,346,2,P,19:15:00,19:30:00', '2014-12-08 08:05:03'),
+(155, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '155,346,2,P,19:30:00,19:45:00', '2014-12-08 08:05:03'),
+(156, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '156,346,2,P,19:45:00,20:00:00', '2014-12-08 08:05:03'),
+(157, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '157,346,2,P,20:00:00,20:15:00', '2014-12-08 08:05:03'),
+(158, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '158,346,2,P,20:15:00,20:30:00', '2014-12-08 08:05:03'),
+(159, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '159,346,2,P,20:30:00,20:45:00', '2014-12-08 08:05:04'),
+(160, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '160,346,2,P,20:45:00,21:00:00', '2014-12-08 08:05:04'),
+(161, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '161,347,2,P,11:00:00,11:15:00', '2014-12-08 08:05:04'),
+(162, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '162,347,2,P,11:15:00,11:30:00', '2014-12-08 08:05:04'),
+(163, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '163,347,2,P,11:30:00,11:45:00', '2014-12-08 08:05:04'),
+(164, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '164,347,2,P,11:45:00,12:00:00', '2014-12-08 08:05:04'),
+(165, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '165,347,2,P,12:00:00,12:15:00', '2014-12-08 08:05:04'),
+(166, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '166,347,2,P,12:15:00,12:30:00', '2014-12-08 08:05:04'),
+(167, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '167,347,2,P,12:30:00,12:45:00', '2014-12-08 08:05:04'),
+(168, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '168,347,2,P,12:45:00,13:00:00', '2014-12-08 08:05:04'),
+(169, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '169,347,2,P,13:00:00,13:15:00', '2014-12-08 08:05:04'),
+(170, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '170,347,2,P,13:15:00,13:30:00', '2014-12-08 08:05:04'),
+(171, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '171,347,2,P,13:30:00,13:45:00', '2014-12-08 08:05:04'),
+(172, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '172,347,2,P,13:45:00,14:00:00', '2014-12-08 08:05:04'),
+(173, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '173,347,2,P,14:00:00,14:15:00', '2014-12-08 08:05:04'),
+(174, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '174,347,2,P,14:15:00,14:30:00', '2014-12-08 08:05:04'),
+(175, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '175,347,2,P,14:30:00,14:45:00', '2014-12-08 08:05:04'),
+(176, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '176,347,2,P,14:45:00,15:00:00', '2014-12-08 08:05:04'),
+(177, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '177,347,2,P,15:00:00,15:15:00', '2014-12-08 08:05:04'),
+(178, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '178,347,2,P,15:15:00,15:30:00', '2014-12-08 08:05:04'),
+(179, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '179,347,2,P,15:30:00,15:45:00', '2014-12-08 08:05:04'),
+(180, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '180,347,2,P,15:45:00,16:00:00', '2014-12-08 08:05:04'),
+(181, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '181,347,2,P,16:00:00,16:15:00', '2014-12-08 08:05:04'),
+(182, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '182,347,2,P,16:15:00,16:30:00', '2014-12-08 08:05:04'),
+(183, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '183,347,2,P,16:30:00,16:45:00', '2014-12-08 08:05:04'),
+(184, '21.930.126-K', 'OFERTA_HOR', 'INSERT', NULL, '184,347,2,P,16:45:00,17:00:00', '2014-12-08 08:05:04'),
+(185, '17.770.075-4', 'AGENDA', 'INSERT', NULL, '1,9,2,1,P', '2014-12-08 08:13:13'),
+(186, '17.925.891-9', 'AGENDA', 'INSERT', NULL, '2,3,2,1,P', '2014-12-08 08:13:37');
 
 -- --------------------------------------------------------
 
@@ -5839,7 +6233,7 @@ CREATE TABLE IF NOT EXISTS `log_sql` (
 CREATE TABLE IF NOT EXISTS `mas` (
   `ID_MAS` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador ?nico para la mascota.',
   `ID_TIPO_MAS` int(11) NOT NULL COMMENT 'Identificador ?nico para el tipo de mascota.',
-  `ID` int(11) DEFAULT NULL COMMENT 'Identificador ?nico de Cliente',
+  `ID` int(11) NOT NULL COMMENT 'Identificador ?nico de Cliente',
   `NOMBRE_MAS` varchar(30) NOT NULL COMMENT 'Nombre  por el cual el due?o se refiere a su mascota.',
   `RAZA_MAS` varchar(30) NOT NULL COMMENT 'Raza de la mascota, pueder Mestizo,',
   `FECHA_NACIMIENTO` date NOT NULL COMMENT 'Fecha en la cual la mascota naci?, de desconocer dicha fecha, puede ser un aproximado.',
@@ -5850,28 +6244,30 @@ CREATE TABLE IF NOT EXISTS `mas` (
   PRIMARY KEY (`ID_MAS`),
   KEY `FK_ES` (`ID_TIPO_MAS`),
   KEY `FK_TIENE2` (`ID`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa una mascota dentro del sistema, esta ' AUTO_INCREMENT=9 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa una mascota dentro del sistema, esta ' AUTO_INCREMENT=11 ;
 
 --
 -- Volcado de datos para la tabla `mas`
 --
 
 INSERT INTO `mas` (`ID_MAS`, `ID_TIPO_MAS`, `ID`, `NOMBRE_MAS`, `RAZA_MAS`, `FECHA_NACIMIENTO`, `SEXO`, `COLOR`, `CARACTERISTICA`, `FECHA_DEFUNCION`) VALUES
-(1, 1, 31, 'Clara', 'Quiltro', '2014-11-01', 'H', 'Cafe', 'Pelaje Largo', NULL),
-(2, 2, 31, 'LOLO', 'Atigrado', '2014-11-29', 'M', 'Negro, Gris, Blanco', NULL, NULL),
-(3, 1, 31, 'CHOCHO', 'POODLE', '2014-11-05', 'H', 'BLANCO', NULL, NULL),
-(4, 1, 22, 'Puppy', 'Poodle', '2014-11-02', 'H', 'Cafe', NULL, NULL),
-(5, 2, 23, 'Minino', 'Atigrado', '2014-11-22', 'M', 'Gris + Blanco', 'Cicatriz en la cabeza', NULL),
-(6, 2, 36, 'chichulin', 'persa', '2014-12-04', 'H', 'Negro', '', NULL),
-(7, 2, 30, 'Sellla', 'Atigrado', '2014-12-04', 'M', 'Blanco', 'Ninguna', NULL),
-(8, 1, 30, 'Canny', 'Quiltro', '2014-12-04', 'H', 'Cafe', 'Sin detalles', NULL);
+(1, 1, 10, 'Clara', 'Quiltro', '2014-11-01', 'H', 'Cafe', 'Pelaje Largo', NULL),
+(2, 2, 10, 'Lolo', 'Atigrado', '2014-11-29', 'M', 'Negro, Gris, Blanco', NULL, NULL),
+(3, 1, 10, 'Chocho', 'Poodle', '2014-11-05', 'H', 'BLANCO', NULL, NULL),
+(4, 1, 1, 'Puppy', 'Poodle', '2014-11-02', 'H', 'Cafe', NULL, NULL),
+(5, 2, 1, 'Minino', 'Atigrado', '2014-11-22', 'M', 'Gris + Blanco', 'Cicatriz en la cabeza', NULL),
+(6, 2, 2, 'chichulin', 'persa', '2014-12-04', 'H', 'Negro', '', NULL),
+(7, 2, 3, 'Sellla', 'Atigrado', '2014-12-04', 'M', 'Blanco', 'Ninguna', NULL),
+(8, 1, 4, 'Canny', 'Quiltro', '2014-12-04', 'H', 'Cafe', 'Sin detalles', NULL),
+(9, 1, 22, 'Goldie', 'Labrador', '2011-08-20', 'H', 'Bayo', '', NULL),
+(10, 3, 16, 'Iguanin', 'Francesa', '2014-12-08', 'H', 'verde musgo', '', NULL);
 
 --
 -- Disparadores `mas`
 --
-DROP TRIGGER IF EXISTS `GENERA_FICHA`;
+DROP TRIGGER IF EXISTS `TR_GENERA_FICHA`;
 DELIMITER //
-CREATE TRIGGER `GENERA_FICHA` AFTER INSERT ON `mas`
+CREATE TRIGGER `TR_GENERA_FICHA` AFTER INSERT ON `mas`
  FOR EACH ROW BEGIN 
 
 INSERT INTO `aldeaanimal`.`ficha` (`ID_MAS`, `ESTERILIZACION`, `FECHA_ESTERILIZACION`, `FECHA_INGRESO`, `OBS_ESTERILIZACION`) VALUES (new.ID_MAS, NULL, NULL, CURRENT_DATE(), NULL);
@@ -5889,1140 +6285,231 @@ DELIMITER ;
 CREATE TABLE IF NOT EXISTS `oferta_hor` (
   `ID_OFERTA_HOR` int(11) NOT NULL AUTO_INCREMENT COMMENT 'identificador ?nico para oferta horaria\r\n            ',
   `ID_CAL` int(11) NOT NULL COMMENT 'Identificador ?nico para el bloque del calendario.',
-  `ID_VET` int(11) DEFAULT NULL,
+  `ID_VET` int(11) NOT NULL,
   `ESTADO_AGENDAMIENTO` char(1) NOT NULL COMMENT 'Valor en caracteres que indica el estado del agendamiento.\r\n            Este puede ser: ''A'' por aceptado, ''R'' por rechazado, ''L'' por libre.',
   `HORA_INICIO` time NOT NULL COMMENT 'Hora del calendario gen?rico para relacionarlo con un veterinario.',
   `HORA_TERMINO` time NOT NULL,
   PRIMARY KEY (`ID_OFERTA_HOR`),
   KEY `FK_AGENDA` (`ID_VET`),
   KEY `FK_COMPRUEBA2` (`ID_CAL`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa bloques de horario que tiene solicita' AUTO_INCREMENT=1629 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa bloques de horario que tiene solicita' AUTO_INCREMENT=185 ;
 
 --
 -- Volcado de datos para la tabla `oferta_hor`
 --
 
 INSERT INTO `oferta_hor` (`ID_OFERTA_HOR`, `ID_CAL`, `ID_VET`, `ESTADO_AGENDAMIENTO`, `HORA_INICIO`, `HORA_TERMINO`) VALUES
-(509, 328, 2, 'A', '11:00:00', '11:15:00'),
-(510, 328, 2, 'P', '11:15:00', '11:30:00'),
-(511, 328, 2, 'P', '11:30:00', '11:45:00'),
-(512, 328, 2, 'A', '11:45:00', '12:00:00'),
-(513, 328, 2, 'P', '12:00:00', '12:15:00'),
-(514, 328, 2, 'P', '12:15:00', '12:30:00'),
-(515, 328, 2, 'P', '12:30:00', '12:45:00'),
-(516, 328, 2, 'P', '12:45:00', '13:00:00'),
-(517, 328, 2, 'P', '13:00:00', '13:15:00'),
-(518, 328, 2, 'P', '13:15:00', '13:30:00'),
-(519, 328, 2, 'P', '13:30:00', '13:45:00'),
-(520, 328, 2, 'P', '13:45:00', '14:00:00'),
-(521, 328, 2, 'P', '14:00:00', '14:15:00'),
-(522, 328, 2, 'P', '14:15:00', '14:30:00'),
-(523, 328, 2, 'P', '14:30:00', '14:45:00'),
-(524, 328, 2, 'P', '14:45:00', '15:00:00'),
-(525, 328, 2, 'P', '15:00:00', '15:15:00'),
-(526, 328, 2, 'P', '15:15:00', '15:30:00'),
-(527, 328, 2, 'P', '15:30:00', '15:45:00'),
-(528, 328, 2, 'P', '15:45:00', '16:00:00'),
-(529, 328, 2, 'P', '16:00:00', '16:15:00'),
-(530, 328, 2, 'P', '16:15:00', '16:30:00'),
-(531, 328, 2, 'P', '16:30:00', '16:45:00'),
-(532, 328, 2, 'P', '16:45:00', '17:00:00'),
-(533, 328, 2, 'P', '17:00:00', '17:15:00'),
-(534, 328, 2, 'P', '17:15:00', '17:30:00'),
-(535, 328, 2, 'P', '17:30:00', '17:45:00'),
-(536, 328, 2, 'P', '17:45:00', '18:00:00'),
-(537, 328, 2, 'P', '18:00:00', '18:15:00'),
-(538, 328, 2, 'P', '18:15:00', '18:30:00'),
-(539, 328, 2, 'P', '18:30:00', '18:45:00'),
-(540, 328, 2, 'P', '18:45:00', '19:00:00'),
-(541, 328, 2, 'P', '19:00:00', '19:15:00'),
-(542, 328, 2, 'P', '19:15:00', '19:30:00'),
-(543, 328, 2, 'P', '19:30:00', '19:45:00'),
-(544, 328, 2, 'P', '19:45:00', '20:00:00'),
-(545, 328, 2, 'P', '20:00:00', '20:15:00'),
-(546, 328, 2, 'P', '20:15:00', '20:30:00'),
-(547, 328, 2, 'P', '20:30:00', '20:45:00'),
-(548, 328, 2, 'P', '20:45:00', '21:00:00'),
-(549, 329, 2, 'P', '11:00:00', '11:15:00'),
-(550, 329, 2, 'P', '11:15:00', '11:30:00'),
-(551, 329, 2, 'P', '11:30:00', '11:45:00'),
-(552, 329, 2, 'P', '11:45:00', '12:00:00'),
-(553, 329, 2, 'P', '12:00:00', '12:15:00'),
-(554, 329, 2, 'P', '12:15:00', '12:30:00'),
-(555, 329, 2, 'P', '12:30:00', '12:45:00'),
-(556, 329, 2, 'P', '12:45:00', '13:00:00'),
-(557, 329, 2, 'P', '13:00:00', '13:15:00'),
-(558, 329, 2, 'P', '13:15:00', '13:30:00'),
-(559, 329, 2, 'P', '13:30:00', '13:45:00'),
-(560, 329, 2, 'P', '13:45:00', '14:00:00'),
-(561, 329, 2, 'P', '14:00:00', '14:15:00'),
-(562, 329, 2, 'P', '14:15:00', '14:30:00'),
-(563, 329, 2, 'P', '14:30:00', '14:45:00'),
-(564, 329, 2, 'P', '14:45:00', '15:00:00'),
-(565, 329, 2, 'P', '15:00:00', '15:15:00'),
-(566, 329, 2, 'P', '15:15:00', '15:30:00'),
-(567, 329, 2, 'P', '15:30:00', '15:45:00'),
-(568, 329, 2, 'P', '15:45:00', '16:00:00'),
-(569, 329, 2, 'P', '16:00:00', '16:15:00'),
-(570, 329, 2, 'P', '16:15:00', '16:30:00'),
-(571, 329, 2, 'P', '16:30:00', '16:45:00'),
-(572, 329, 2, 'P', '16:45:00', '17:00:00'),
-(573, 329, 2, 'P', '17:00:00', '17:15:00'),
-(574, 329, 2, 'P', '17:15:00', '17:30:00'),
-(575, 329, 2, 'P', '17:30:00', '17:45:00'),
-(576, 329, 2, 'P', '17:45:00', '18:00:00'),
-(577, 329, 2, 'P', '18:00:00', '18:15:00'),
-(578, 329, 2, 'P', '18:15:00', '18:30:00'),
-(579, 329, 2, 'P', '18:30:00', '18:45:00'),
-(580, 329, 2, 'P', '18:45:00', '19:00:00'),
-(581, 329, 2, 'P', '19:00:00', '19:15:00'),
-(582, 329, 2, 'P', '19:15:00', '19:30:00'),
-(583, 329, 2, 'P', '19:30:00', '19:45:00'),
-(584, 329, 2, 'P', '19:45:00', '20:00:00'),
-(585, 329, 2, 'P', '20:00:00', '20:15:00'),
-(586, 329, 2, 'P', '20:15:00', '20:30:00'),
-(587, 329, 2, 'P', '20:30:00', '20:45:00'),
-(588, 329, 2, 'P', '20:45:00', '21:00:00'),
-(589, 330, 2, 'P', '11:00:00', '11:15:00'),
-(590, 330, 2, 'P', '11:15:00', '11:30:00'),
-(591, 330, 2, 'P', '11:30:00', '11:45:00'),
-(592, 330, 2, 'P', '11:45:00', '12:00:00'),
-(593, 330, 2, 'P', '12:00:00', '12:15:00'),
-(594, 330, 2, 'P', '12:15:00', '12:30:00'),
-(595, 330, 2, 'P', '12:30:00', '12:45:00'),
-(596, 330, 2, 'P', '12:45:00', '13:00:00'),
-(597, 330, 2, 'P', '13:00:00', '13:15:00'),
-(598, 330, 2, 'P', '13:15:00', '13:30:00'),
-(599, 330, 2, 'P', '13:30:00', '13:45:00'),
-(600, 330, 2, 'P', '13:45:00', '14:00:00'),
-(601, 330, 2, 'P', '14:00:00', '14:15:00'),
-(602, 330, 2, 'P', '14:15:00', '14:30:00'),
-(603, 330, 2, 'P', '14:30:00', '14:45:00'),
-(604, 330, 2, 'P', '14:45:00', '15:00:00'),
-(605, 330, 2, 'P', '15:00:00', '15:15:00'),
-(606, 330, 2, 'P', '15:15:00', '15:30:00'),
-(607, 330, 2, 'P', '15:30:00', '15:45:00'),
-(608, 330, 2, 'P', '15:45:00', '16:00:00'),
-(609, 330, 2, 'P', '16:00:00', '16:15:00'),
-(610, 330, 2, 'P', '16:15:00', '16:30:00'),
-(611, 330, 2, 'P', '16:30:00', '16:45:00'),
-(612, 330, 2, 'P', '16:45:00', '17:00:00'),
-(613, 330, 2, 'P', '17:00:00', '17:15:00'),
-(614, 330, 2, 'P', '17:15:00', '17:30:00'),
-(615, 330, 2, 'P', '17:30:00', '17:45:00'),
-(616, 330, 2, 'P', '17:45:00', '18:00:00'),
-(617, 330, 2, 'P', '18:00:00', '18:15:00'),
-(618, 330, 2, 'P', '18:15:00', '18:30:00'),
-(619, 330, 2, 'P', '18:30:00', '18:45:00'),
-(620, 330, 2, 'P', '18:45:00', '19:00:00'),
-(621, 330, 2, 'P', '19:00:00', '19:15:00'),
-(622, 330, 2, 'P', '19:15:00', '19:30:00'),
-(623, 330, 2, 'P', '19:30:00', '19:45:00'),
-(624, 330, 2, 'P', '19:45:00', '20:00:00'),
-(625, 330, 2, 'P', '20:00:00', '20:15:00'),
-(626, 330, 2, 'P', '20:15:00', '20:30:00'),
-(627, 330, 2, 'P', '20:30:00', '20:45:00'),
-(628, 330, 2, 'P', '20:45:00', '21:00:00'),
-(629, 331, 2, 'P', '11:00:00', '11:15:00'),
-(630, 331, 2, 'P', '11:15:00', '11:30:00'),
-(631, 331, 2, 'P', '11:30:00', '11:45:00'),
-(632, 331, 2, 'P', '11:45:00', '12:00:00'),
-(633, 331, 2, 'P', '12:00:00', '12:15:00'),
-(634, 331, 2, 'P', '12:15:00', '12:30:00'),
-(635, 331, 2, 'P', '12:30:00', '12:45:00'),
-(636, 331, 2, 'P', '12:45:00', '13:00:00'),
-(637, 331, 2, 'P', '13:00:00', '13:15:00'),
-(638, 331, 2, 'P', '13:15:00', '13:30:00'),
-(639, 331, 2, 'P', '13:30:00', '13:45:00'),
-(640, 331, 2, 'P', '13:45:00', '14:00:00'),
-(641, 331, 2, 'P', '14:00:00', '14:15:00'),
-(642, 331, 2, 'P', '14:15:00', '14:30:00'),
-(643, 331, 2, 'P', '14:30:00', '14:45:00'),
-(644, 331, 2, 'P', '14:45:00', '15:00:00'),
-(645, 331, 2, 'P', '15:00:00', '15:15:00'),
-(646, 331, 2, 'P', '15:15:00', '15:30:00'),
-(647, 331, 2, 'P', '15:30:00', '15:45:00'),
-(648, 331, 2, 'P', '15:45:00', '16:00:00'),
-(649, 331, 2, 'P', '16:00:00', '16:15:00'),
-(650, 331, 2, 'P', '16:15:00', '16:30:00'),
-(651, 331, 2, 'P', '16:30:00', '16:45:00'),
-(652, 331, 2, 'P', '16:45:00', '17:00:00'),
-(653, 331, 2, 'P', '17:00:00', '17:15:00'),
-(654, 331, 2, 'P', '17:15:00', '17:30:00'),
-(655, 331, 2, 'P', '17:30:00', '17:45:00'),
-(656, 331, 2, 'P', '17:45:00', '18:00:00'),
-(657, 331, 2, 'P', '18:00:00', '18:15:00'),
-(658, 331, 2, 'P', '18:15:00', '18:30:00'),
-(659, 331, 2, 'P', '18:30:00', '18:45:00'),
-(660, 331, 2, 'P', '18:45:00', '19:00:00'),
-(661, 331, 2, 'P', '19:00:00', '19:15:00'),
-(662, 331, 2, 'P', '19:15:00', '19:30:00'),
-(663, 331, 2, 'P', '19:30:00', '19:45:00'),
-(664, 331, 2, 'P', '19:45:00', '20:00:00'),
-(665, 331, 2, 'P', '20:00:00', '20:15:00'),
-(666, 331, 2, 'P', '20:15:00', '20:30:00'),
-(667, 331, 2, 'P', '20:30:00', '20:45:00'),
-(668, 331, 2, 'P', '20:45:00', '21:00:00'),
-(669, 332, 2, 'P', '11:00:00', '11:15:00'),
-(670, 332, 2, 'P', '11:15:00', '11:30:00'),
-(671, 332, 2, 'P', '11:30:00', '11:45:00'),
-(672, 332, 2, 'P', '11:45:00', '12:00:00'),
-(673, 332, 2, 'P', '12:00:00', '12:15:00'),
-(674, 332, 2, 'P', '12:15:00', '12:30:00'),
-(675, 332, 2, 'P', '12:30:00', '12:45:00'),
-(676, 332, 2, 'P', '12:45:00', '13:00:00'),
-(677, 332, 2, 'P', '13:00:00', '13:15:00'),
-(678, 332, 2, 'P', '13:15:00', '13:30:00'),
-(679, 332, 2, 'P', '13:30:00', '13:45:00'),
-(680, 332, 2, 'P', '13:45:00', '14:00:00'),
-(681, 332, 2, 'P', '14:00:00', '14:15:00'),
-(682, 332, 2, 'P', '14:15:00', '14:30:00'),
-(683, 332, 2, 'P', '14:30:00', '14:45:00'),
-(684, 332, 2, 'P', '14:45:00', '15:00:00'),
-(685, 332, 2, 'P', '15:00:00', '15:15:00'),
-(686, 332, 2, 'P', '15:15:00', '15:30:00'),
-(687, 332, 2, 'P', '15:30:00', '15:45:00'),
-(688, 332, 2, 'P', '15:45:00', '16:00:00'),
-(689, 332, 2, 'P', '16:00:00', '16:15:00'),
-(690, 332, 2, 'P', '16:15:00', '16:30:00'),
-(691, 332, 2, 'P', '16:30:00', '16:45:00'),
-(692, 332, 2, 'P', '16:45:00', '17:00:00'),
-(693, 332, 2, 'P', '17:00:00', '17:15:00'),
-(694, 332, 2, 'P', '17:15:00', '17:30:00'),
-(695, 332, 2, 'P', '17:30:00', '17:45:00'),
-(696, 332, 2, 'P', '17:45:00', '18:00:00'),
-(697, 332, 2, 'P', '18:00:00', '18:15:00'),
-(698, 332, 2, 'P', '18:15:00', '18:30:00'),
-(699, 332, 2, 'P', '18:30:00', '18:45:00'),
-(700, 332, 2, 'P', '18:45:00', '19:00:00'),
-(701, 332, 2, 'P', '19:00:00', '19:15:00'),
-(702, 332, 2, 'P', '19:15:00', '19:30:00'),
-(703, 332, 2, 'P', '19:30:00', '19:45:00'),
-(704, 332, 2, 'P', '19:45:00', '20:00:00'),
-(705, 332, 2, 'P', '20:00:00', '20:15:00'),
-(706, 332, 2, 'P', '20:15:00', '20:30:00'),
-(707, 332, 2, 'P', '20:30:00', '20:45:00'),
-(708, 332, 2, 'P', '20:45:00', '21:00:00'),
-(709, 333, 2, 'P', '11:00:00', '11:15:00'),
-(710, 333, 2, 'P', '11:15:00', '11:30:00'),
-(711, 333, 2, 'P', '11:30:00', '11:45:00'),
-(712, 333, 2, 'P', '11:45:00', '12:00:00'),
-(713, 333, 2, 'P', '12:00:00', '12:15:00'),
-(714, 333, 2, 'P', '12:15:00', '12:30:00'),
-(715, 333, 2, 'P', '12:30:00', '12:45:00'),
-(716, 333, 2, 'P', '12:45:00', '13:00:00'),
-(717, 333, 2, 'P', '13:00:00', '13:15:00'),
-(718, 333, 2, 'P', '13:15:00', '13:30:00'),
-(719, 333, 2, 'P', '13:30:00', '13:45:00'),
-(720, 333, 2, 'P', '13:45:00', '14:00:00'),
-(721, 333, 2, 'P', '14:00:00', '14:15:00'),
-(722, 333, 2, 'P', '14:15:00', '14:30:00'),
-(723, 333, 2, 'P', '14:30:00', '14:45:00'),
-(724, 333, 2, 'P', '14:45:00', '15:00:00'),
-(725, 333, 2, 'P', '15:00:00', '15:15:00'),
-(726, 333, 2, 'P', '15:15:00', '15:30:00'),
-(727, 333, 2, 'P', '15:30:00', '15:45:00'),
-(728, 333, 2, 'P', '15:45:00', '16:00:00'),
-(729, 333, 2, 'P', '16:00:00', '16:15:00'),
-(730, 333, 2, 'P', '16:15:00', '16:30:00'),
-(731, 333, 2, 'P', '16:30:00', '16:45:00'),
-(732, 333, 2, 'P', '16:45:00', '17:00:00'),
-(733, 335, 2, 'P', '11:00:00', '11:15:00'),
-(734, 335, 2, 'P', '11:15:00', '11:30:00'),
-(735, 335, 2, 'P', '11:30:00', '11:45:00'),
-(736, 335, 2, 'P', '11:45:00', '12:00:00'),
-(737, 335, 2, 'P', '12:00:00', '12:15:00'),
-(738, 335, 2, 'P', '12:15:00', '12:30:00'),
-(739, 335, 2, 'P', '12:30:00', '12:45:00'),
-(740, 335, 2, 'P', '12:45:00', '13:00:00'),
-(741, 335, 2, 'P', '13:00:00', '13:15:00'),
-(742, 335, 2, 'P', '13:15:00', '13:30:00'),
-(743, 335, 2, 'P', '13:30:00', '13:45:00'),
-(744, 335, 2, 'P', '13:45:00', '14:00:00'),
-(745, 335, 2, 'P', '14:00:00', '14:15:00'),
-(746, 335, 2, 'P', '14:15:00', '14:30:00'),
-(747, 335, 2, 'P', '14:30:00', '14:45:00'),
-(748, 335, 2, 'P', '14:45:00', '15:00:00'),
-(749, 335, 2, 'P', '15:00:00', '15:15:00'),
-(750, 335, 2, 'P', '15:15:00', '15:30:00'),
-(751, 335, 2, 'P', '15:30:00', '15:45:00'),
-(752, 335, 2, 'P', '15:45:00', '16:00:00'),
-(753, 335, 2, 'P', '16:00:00', '16:15:00'),
-(754, 335, 2, 'P', '16:15:00', '16:30:00'),
-(755, 335, 2, 'P', '16:30:00', '16:45:00'),
-(756, 335, 2, 'P', '16:45:00', '17:00:00'),
-(757, 335, 2, 'P', '17:00:00', '17:15:00'),
-(758, 335, 2, 'P', '17:15:00', '17:30:00'),
-(759, 335, 2, 'P', '17:30:00', '17:45:00'),
-(760, 335, 2, 'P', '17:45:00', '18:00:00'),
-(761, 335, 2, 'P', '18:00:00', '18:15:00'),
-(762, 335, 2, 'P', '18:15:00', '18:30:00'),
-(763, 335, 2, 'P', '18:30:00', '18:45:00'),
-(764, 335, 2, 'P', '18:45:00', '19:00:00'),
-(765, 335, 2, 'P', '19:00:00', '19:15:00'),
-(766, 335, 2, 'P', '19:15:00', '19:30:00'),
-(767, 335, 2, 'P', '19:30:00', '19:45:00'),
-(768, 335, 2, 'P', '19:45:00', '20:00:00'),
-(769, 335, 2, 'P', '20:00:00', '20:15:00'),
-(770, 335, 2, 'P', '20:15:00', '20:30:00'),
-(771, 335, 2, 'P', '20:30:00', '20:45:00'),
-(772, 335, 2, 'P', '20:45:00', '21:00:00'),
-(773, 336, 2, 'P', '11:00:00', '11:15:00'),
-(774, 336, 2, 'P', '11:15:00', '11:30:00'),
-(775, 336, 2, 'P', '11:30:00', '11:45:00'),
-(776, 336, 2, 'P', '11:45:00', '12:00:00'),
-(777, 336, 2, 'P', '12:00:00', '12:15:00'),
-(778, 336, 2, 'P', '12:15:00', '12:30:00'),
-(779, 336, 2, 'P', '12:30:00', '12:45:00'),
-(780, 336, 2, 'P', '12:45:00', '13:00:00'),
-(781, 336, 2, 'P', '13:00:00', '13:15:00'),
-(782, 336, 2, 'P', '13:15:00', '13:30:00'),
-(783, 336, 2, 'P', '13:30:00', '13:45:00'),
-(784, 336, 2, 'P', '13:45:00', '14:00:00'),
-(785, 336, 2, 'P', '14:00:00', '14:15:00'),
-(786, 336, 2, 'P', '14:15:00', '14:30:00'),
-(787, 336, 2, 'P', '14:30:00', '14:45:00'),
-(788, 336, 2, 'P', '14:45:00', '15:00:00'),
-(789, 336, 2, 'P', '15:00:00', '15:15:00'),
-(790, 336, 2, 'P', '15:15:00', '15:30:00'),
-(791, 336, 2, 'P', '15:30:00', '15:45:00'),
-(792, 336, 2, 'P', '15:45:00', '16:00:00'),
-(793, 336, 2, 'P', '16:00:00', '16:15:00'),
-(794, 336, 2, 'P', '16:15:00', '16:30:00'),
-(795, 336, 2, 'P', '16:30:00', '16:45:00'),
-(796, 336, 2, 'P', '16:45:00', '17:00:00'),
-(797, 336, 2, 'P', '17:00:00', '17:15:00'),
-(798, 336, 2, 'P', '17:15:00', '17:30:00'),
-(799, 336, 2, 'P', '17:30:00', '17:45:00'),
-(800, 336, 2, 'P', '17:45:00', '18:00:00'),
-(801, 336, 2, 'P', '18:00:00', '18:15:00'),
-(802, 336, 2, 'P', '18:15:00', '18:30:00'),
-(803, 336, 2, 'P', '18:30:00', '18:45:00'),
-(804, 336, 2, 'P', '18:45:00', '19:00:00'),
-(805, 336, 2, 'P', '19:00:00', '19:15:00'),
-(806, 336, 2, 'P', '19:15:00', '19:30:00'),
-(807, 336, 2, 'P', '19:30:00', '19:45:00'),
-(808, 336, 2, 'P', '19:45:00', '20:00:00'),
-(809, 336, 2, 'P', '20:00:00', '20:15:00'),
-(810, 336, 2, 'P', '20:15:00', '20:30:00'),
-(811, 336, 2, 'P', '20:30:00', '20:45:00'),
-(812, 336, 2, 'P', '20:45:00', '21:00:00'),
-(813, 337, 2, 'P', '11:00:00', '11:15:00'),
-(814, 337, 2, 'P', '11:15:00', '11:30:00'),
-(815, 337, 2, 'P', '11:30:00', '11:45:00'),
-(816, 337, 2, 'P', '11:45:00', '12:00:00'),
-(817, 337, 2, 'P', '12:00:00', '12:15:00'),
-(818, 337, 2, 'P', '12:15:00', '12:30:00'),
-(819, 337, 2, 'P', '12:30:00', '12:45:00'),
-(820, 337, 2, 'P', '12:45:00', '13:00:00'),
-(821, 337, 2, 'P', '13:00:00', '13:15:00'),
-(822, 337, 2, 'P', '13:15:00', '13:30:00'),
-(823, 337, 2, 'P', '13:30:00', '13:45:00'),
-(824, 337, 2, 'P', '13:45:00', '14:00:00'),
-(825, 337, 2, 'P', '14:00:00', '14:15:00'),
-(826, 337, 2, 'P', '14:15:00', '14:30:00'),
-(827, 337, 2, 'P', '14:30:00', '14:45:00'),
-(828, 337, 2, 'P', '14:45:00', '15:00:00'),
-(829, 337, 2, 'P', '15:00:00', '15:15:00'),
-(830, 337, 2, 'P', '15:15:00', '15:30:00'),
-(831, 337, 2, 'P', '15:30:00', '15:45:00'),
-(832, 337, 2, 'P', '15:45:00', '16:00:00'),
-(833, 337, 2, 'P', '16:00:00', '16:15:00'),
-(834, 337, 2, 'P', '16:15:00', '16:30:00'),
-(835, 337, 2, 'P', '16:30:00', '16:45:00'),
-(836, 337, 2, 'P', '16:45:00', '17:00:00'),
-(837, 337, 2, 'P', '17:00:00', '17:15:00'),
-(838, 337, 2, 'P', '17:15:00', '17:30:00'),
-(839, 337, 2, 'P', '17:30:00', '17:45:00'),
-(840, 337, 2, 'P', '17:45:00', '18:00:00'),
-(841, 337, 2, 'P', '18:00:00', '18:15:00'),
-(842, 337, 2, 'P', '18:15:00', '18:30:00'),
-(843, 337, 2, 'P', '18:30:00', '18:45:00'),
-(844, 337, 2, 'P', '18:45:00', '19:00:00'),
-(845, 337, 2, 'P', '19:00:00', '19:15:00'),
-(846, 337, 2, 'P', '19:15:00', '19:30:00'),
-(847, 337, 2, 'P', '19:30:00', '19:45:00'),
-(848, 337, 2, 'P', '19:45:00', '20:00:00'),
-(849, 337, 2, 'P', '20:00:00', '20:15:00'),
-(850, 337, 2, 'P', '20:15:00', '20:30:00'),
-(851, 337, 2, 'P', '20:30:00', '20:45:00'),
-(852, 337, 2, 'P', '20:45:00', '21:00:00'),
-(853, 338, 2, 'P', '11:00:00', '11:15:00'),
-(854, 338, 2, 'P', '11:15:00', '11:30:00'),
-(855, 338, 2, 'P', '11:30:00', '11:45:00'),
-(856, 338, 2, 'P', '11:45:00', '12:00:00'),
-(857, 338, 2, 'P', '12:00:00', '12:15:00'),
-(858, 338, 2, 'P', '12:15:00', '12:30:00'),
-(859, 338, 2, 'P', '12:30:00', '12:45:00'),
-(860, 338, 2, 'P', '12:45:00', '13:00:00'),
-(861, 338, 2, 'P', '13:00:00', '13:15:00'),
-(862, 338, 2, 'P', '13:15:00', '13:30:00'),
-(863, 338, 2, 'P', '13:30:00', '13:45:00'),
-(864, 338, 2, 'P', '13:45:00', '14:00:00'),
-(865, 338, 2, 'P', '14:00:00', '14:15:00'),
-(866, 338, 2, 'P', '14:15:00', '14:30:00'),
-(867, 338, 2, 'P', '14:30:00', '14:45:00'),
-(868, 338, 2, 'P', '14:45:00', '15:00:00'),
-(869, 338, 2, 'P', '15:00:00', '15:15:00'),
-(870, 338, 2, 'P', '15:15:00', '15:30:00'),
-(871, 338, 2, 'P', '15:30:00', '15:45:00'),
-(872, 338, 2, 'P', '15:45:00', '16:00:00'),
-(873, 338, 2, 'P', '16:00:00', '16:15:00'),
-(874, 338, 2, 'P', '16:15:00', '16:30:00'),
-(875, 338, 2, 'P', '16:30:00', '16:45:00'),
-(876, 338, 2, 'P', '16:45:00', '17:00:00'),
-(877, 338, 2, 'P', '17:00:00', '17:15:00'),
-(878, 338, 2, 'P', '17:15:00', '17:30:00'),
-(879, 338, 2, 'P', '17:30:00', '17:45:00'),
-(880, 338, 2, 'P', '17:45:00', '18:00:00'),
-(881, 338, 2, 'P', '18:00:00', '18:15:00'),
-(882, 338, 2, 'P', '18:15:00', '18:30:00'),
-(883, 338, 2, 'P', '18:30:00', '18:45:00'),
-(884, 338, 2, 'P', '18:45:00', '19:00:00'),
-(885, 338, 2, 'P', '19:00:00', '19:15:00'),
-(886, 338, 2, 'P', '19:15:00', '19:30:00'),
-(887, 338, 2, 'P', '19:30:00', '19:45:00'),
-(888, 338, 2, 'P', '19:45:00', '20:00:00'),
-(889, 338, 2, 'P', '20:00:00', '20:15:00'),
-(890, 338, 2, 'P', '20:15:00', '20:30:00'),
-(891, 338, 2, 'P', '20:30:00', '20:45:00'),
-(892, 338, 2, 'P', '20:45:00', '21:00:00'),
-(893, 339, 2, 'P', '11:00:00', '11:15:00'),
-(894, 339, 2, 'P', '11:15:00', '11:30:00'),
-(895, 339, 2, 'P', '11:30:00', '11:45:00'),
-(896, 339, 2, 'P', '11:45:00', '12:00:00'),
-(897, 339, 2, 'P', '12:00:00', '12:15:00'),
-(898, 339, 2, 'P', '12:15:00', '12:30:00'),
-(899, 339, 2, 'P', '12:30:00', '12:45:00'),
-(900, 339, 2, 'P', '12:45:00', '13:00:00'),
-(901, 339, 2, 'P', '13:00:00', '13:15:00'),
-(902, 339, 2, 'P', '13:15:00', '13:30:00'),
-(903, 339, 2, 'P', '13:30:00', '13:45:00'),
-(904, 339, 2, 'P', '13:45:00', '14:00:00'),
-(905, 339, 2, 'P', '14:00:00', '14:15:00'),
-(906, 339, 2, 'P', '14:15:00', '14:30:00'),
-(907, 339, 2, 'P', '14:30:00', '14:45:00'),
-(908, 339, 2, 'P', '14:45:00', '15:00:00'),
-(909, 339, 2, 'P', '15:00:00', '15:15:00'),
-(910, 339, 2, 'P', '15:15:00', '15:30:00'),
-(911, 339, 2, 'P', '15:30:00', '15:45:00'),
-(912, 339, 2, 'P', '15:45:00', '16:00:00'),
-(913, 339, 2, 'P', '16:00:00', '16:15:00'),
-(914, 339, 2, 'P', '16:15:00', '16:30:00'),
-(915, 339, 2, 'P', '16:30:00', '16:45:00'),
-(916, 339, 2, 'P', '16:45:00', '17:00:00'),
-(917, 339, 2, 'P', '17:00:00', '17:15:00'),
-(918, 339, 2, 'P', '17:15:00', '17:30:00'),
-(919, 339, 2, 'P', '17:30:00', '17:45:00'),
-(920, 339, 2, 'P', '17:45:00', '18:00:00'),
-(921, 339, 2, 'P', '18:00:00', '18:15:00'),
-(922, 339, 2, 'P', '18:15:00', '18:30:00'),
-(923, 339, 2, 'P', '18:30:00', '18:45:00'),
-(924, 339, 2, 'P', '18:45:00', '19:00:00'),
-(925, 339, 2, 'P', '19:00:00', '19:15:00'),
-(926, 339, 2, 'P', '19:15:00', '19:30:00'),
-(927, 339, 2, 'P', '19:30:00', '19:45:00'),
-(928, 339, 2, 'P', '19:45:00', '20:00:00'),
-(929, 339, 2, 'P', '20:00:00', '20:15:00'),
-(930, 339, 2, 'P', '20:15:00', '20:30:00'),
-(931, 339, 2, 'P', '20:30:00', '20:45:00'),
-(932, 339, 2, 'P', '20:45:00', '21:00:00'),
-(933, 340, 2, 'P', '11:00:00', '11:15:00'),
-(934, 340, 2, 'P', '11:15:00', '11:30:00'),
-(935, 340, 2, 'P', '11:30:00', '11:45:00'),
-(936, 340, 2, 'P', '11:45:00', '12:00:00'),
-(937, 340, 2, 'P', '12:00:00', '12:15:00'),
-(938, 340, 2, 'P', '12:15:00', '12:30:00'),
-(939, 340, 2, 'P', '12:30:00', '12:45:00'),
-(940, 340, 2, 'P', '12:45:00', '13:00:00'),
-(941, 340, 2, 'P', '13:00:00', '13:15:00'),
-(942, 340, 2, 'P', '13:15:00', '13:30:00'),
-(943, 340, 2, 'P', '13:30:00', '13:45:00'),
-(944, 340, 2, 'P', '13:45:00', '14:00:00'),
-(945, 340, 2, 'P', '14:00:00', '14:15:00'),
-(946, 340, 2, 'P', '14:15:00', '14:30:00'),
-(947, 340, 2, 'A', '14:30:00', '14:45:00'),
-(948, 340, 2, 'P', '14:45:00', '15:00:00'),
-(949, 340, 2, 'P', '15:00:00', '15:15:00'),
-(950, 340, 2, 'P', '15:15:00', '15:30:00'),
-(951, 340, 2, 'P', '15:30:00', '15:45:00'),
-(952, 340, 2, 'P', '15:45:00', '16:00:00'),
-(953, 340, 2, 'P', '16:00:00', '16:15:00'),
-(954, 340, 2, 'P', '16:15:00', '16:30:00'),
-(955, 340, 2, 'P', '16:30:00', '16:45:00'),
-(956, 340, 2, 'P', '16:45:00', '17:00:00'),
-(957, 342, 2, 'P', '11:00:00', '11:15:00'),
-(958, 342, 2, 'P', '11:15:00', '11:30:00'),
-(959, 342, 2, 'P', '11:30:00', '11:45:00'),
-(960, 342, 2, 'P', '11:45:00', '12:00:00'),
-(961, 342, 2, 'P', '12:00:00', '12:15:00'),
-(962, 342, 2, 'P', '12:15:00', '12:30:00'),
-(963, 342, 2, 'P', '12:30:00', '12:45:00'),
-(964, 342, 2, 'P', '12:45:00', '13:00:00'),
-(965, 342, 2, 'P', '13:00:00', '13:15:00'),
-(966, 342, 2, 'P', '13:15:00', '13:30:00'),
-(967, 342, 2, 'P', '13:30:00', '13:45:00'),
-(968, 342, 2, 'P', '13:45:00', '14:00:00'),
-(969, 342, 2, 'P', '14:00:00', '14:15:00'),
-(970, 342, 2, 'P', '14:15:00', '14:30:00'),
-(971, 342, 2, 'P', '14:30:00', '14:45:00'),
-(972, 342, 2, 'P', '14:45:00', '15:00:00'),
-(973, 342, 2, 'P', '15:00:00', '15:15:00'),
-(974, 342, 2, 'P', '15:15:00', '15:30:00'),
-(975, 342, 2, 'P', '15:30:00', '15:45:00'),
-(976, 342, 2, 'P', '15:45:00', '16:00:00'),
-(977, 342, 2, 'P', '16:00:00', '16:15:00'),
-(978, 342, 2, 'P', '16:15:00', '16:30:00'),
-(979, 342, 2, 'P', '16:30:00', '16:45:00'),
-(980, 342, 2, 'P', '16:45:00', '17:00:00'),
-(981, 342, 2, 'P', '17:00:00', '17:15:00'),
-(982, 342, 2, 'P', '17:15:00', '17:30:00'),
-(983, 342, 2, 'P', '17:30:00', '17:45:00'),
-(984, 342, 2, 'P', '17:45:00', '18:00:00'),
-(985, 342, 2, 'P', '18:00:00', '18:15:00'),
-(986, 342, 2, 'P', '18:15:00', '18:30:00'),
-(987, 342, 2, 'P', '18:30:00', '18:45:00'),
-(988, 342, 2, 'P', '18:45:00', '19:00:00'),
-(989, 342, 2, 'P', '19:00:00', '19:15:00'),
-(990, 342, 2, 'P', '19:15:00', '19:30:00'),
-(991, 342, 2, 'P', '19:30:00', '19:45:00'),
-(992, 342, 2, 'P', '19:45:00', '20:00:00'),
-(993, 342, 2, 'P', '20:00:00', '20:15:00'),
-(994, 342, 2, 'P', '20:15:00', '20:30:00'),
-(995, 342, 2, 'P', '20:30:00', '20:45:00'),
-(996, 342, 2, 'P', '20:45:00', '21:00:00'),
-(997, 343, 2, 'P', '11:00:00', '11:15:00'),
-(998, 343, 2, 'P', '11:15:00', '11:30:00'),
-(999, 343, 2, 'P', '11:30:00', '11:45:00'),
-(1000, 343, 2, 'P', '11:45:00', '12:00:00'),
-(1001, 343, 2, 'P', '12:00:00', '12:15:00'),
-(1002, 343, 2, 'P', '12:15:00', '12:30:00'),
-(1003, 343, 2, 'P', '12:30:00', '12:45:00'),
-(1004, 343, 2, 'P', '12:45:00', '13:00:00'),
-(1005, 343, 2, 'P', '13:00:00', '13:15:00'),
-(1006, 343, 2, 'P', '13:15:00', '13:30:00'),
-(1007, 343, 2, 'P', '13:30:00', '13:45:00'),
-(1008, 343, 2, 'P', '13:45:00', '14:00:00'),
-(1009, 343, 2, 'P', '14:00:00', '14:15:00'),
-(1010, 343, 2, 'P', '14:15:00', '14:30:00'),
-(1011, 343, 2, 'P', '14:30:00', '14:45:00'),
-(1012, 343, 2, 'P', '14:45:00', '15:00:00'),
-(1013, 343, 2, 'P', '15:00:00', '15:15:00'),
-(1014, 343, 2, 'P', '15:15:00', '15:30:00'),
-(1015, 343, 2, 'P', '15:30:00', '15:45:00'),
-(1016, 343, 2, 'P', '15:45:00', '16:00:00'),
-(1017, 343, 2, 'P', '16:00:00', '16:15:00'),
-(1018, 343, 2, 'P', '16:15:00', '16:30:00'),
-(1019, 343, 2, 'P', '16:30:00', '16:45:00'),
-(1020, 343, 2, 'P', '16:45:00', '17:00:00'),
-(1021, 343, 2, 'P', '17:00:00', '17:15:00'),
-(1022, 343, 2, 'P', '17:15:00', '17:30:00'),
-(1023, 343, 2, 'P', '17:30:00', '17:45:00'),
-(1024, 343, 2, 'P', '17:45:00', '18:00:00'),
-(1025, 343, 2, 'P', '18:00:00', '18:15:00'),
-(1026, 343, 2, 'P', '18:15:00', '18:30:00'),
-(1027, 343, 2, 'P', '18:30:00', '18:45:00'),
-(1028, 343, 2, 'P', '18:45:00', '19:00:00'),
-(1029, 343, 2, 'P', '19:00:00', '19:15:00'),
-(1030, 343, 2, 'P', '19:15:00', '19:30:00'),
-(1031, 343, 2, 'P', '19:30:00', '19:45:00'),
-(1032, 343, 2, 'P', '19:45:00', '20:00:00'),
-(1033, 343, 2, 'P', '20:00:00', '20:15:00'),
-(1034, 343, 2, 'P', '20:15:00', '20:30:00'),
-(1035, 343, 2, 'P', '20:30:00', '20:45:00'),
-(1036, 343, 2, 'P', '20:45:00', '21:00:00'),
-(1037, 344, 2, 'P', '11:00:00', '11:15:00'),
-(1038, 344, 2, 'P', '11:15:00', '11:30:00'),
-(1039, 344, 2, 'P', '11:30:00', '11:45:00'),
-(1040, 344, 2, 'P', '11:45:00', '12:00:00'),
-(1041, 344, 2, 'P', '12:00:00', '12:15:00'),
-(1042, 344, 2, 'P', '12:15:00', '12:30:00'),
-(1043, 344, 2, 'P', '12:30:00', '12:45:00'),
-(1044, 344, 2, 'P', '12:45:00', '13:00:00'),
-(1045, 344, 2, 'P', '13:00:00', '13:15:00'),
-(1046, 344, 2, 'P', '13:15:00', '13:30:00'),
-(1047, 344, 2, 'P', '13:30:00', '13:45:00'),
-(1048, 344, 2, 'P', '13:45:00', '14:00:00'),
-(1049, 344, 2, 'P', '14:00:00', '14:15:00'),
-(1050, 344, 2, 'P', '14:15:00', '14:30:00'),
-(1051, 344, 2, 'P', '14:30:00', '14:45:00'),
-(1052, 344, 2, 'P', '14:45:00', '15:00:00'),
-(1053, 344, 2, 'P', '15:00:00', '15:15:00'),
-(1054, 344, 2, 'P', '15:15:00', '15:30:00'),
-(1055, 344, 2, 'P', '15:30:00', '15:45:00'),
-(1056, 344, 2, 'P', '15:45:00', '16:00:00'),
-(1057, 344, 2, 'P', '16:00:00', '16:15:00'),
-(1058, 344, 2, 'P', '16:15:00', '16:30:00'),
-(1059, 344, 2, 'P', '16:30:00', '16:45:00'),
-(1060, 344, 2, 'P', '16:45:00', '17:00:00'),
-(1061, 344, 2, 'P', '17:00:00', '17:15:00'),
-(1062, 344, 2, 'P', '17:15:00', '17:30:00'),
-(1063, 344, 2, 'P', '17:30:00', '17:45:00'),
-(1064, 344, 2, 'P', '17:45:00', '18:00:00'),
-(1065, 344, 2, 'P', '18:00:00', '18:15:00'),
-(1066, 344, 2, 'P', '18:15:00', '18:30:00'),
-(1067, 344, 2, 'P', '18:30:00', '18:45:00'),
-(1068, 344, 2, 'P', '18:45:00', '19:00:00'),
-(1069, 344, 2, 'P', '19:00:00', '19:15:00'),
-(1070, 344, 2, 'P', '19:15:00', '19:30:00'),
-(1071, 344, 2, 'P', '19:30:00', '19:45:00'),
-(1072, 344, 2, 'P', '19:45:00', '20:00:00'),
-(1073, 344, 2, 'P', '20:00:00', '20:15:00'),
-(1074, 344, 2, 'P', '20:15:00', '20:30:00'),
-(1075, 344, 2, 'P', '20:30:00', '20:45:00'),
-(1076, 344, 2, 'P', '20:45:00', '21:00:00'),
-(1077, 345, 2, 'P', '11:00:00', '11:15:00'),
-(1078, 345, 2, 'P', '11:15:00', '11:30:00'),
-(1079, 345, 2, 'P', '11:30:00', '11:45:00'),
-(1080, 345, 2, 'P', '11:45:00', '12:00:00'),
-(1081, 345, 2, 'P', '12:00:00', '12:15:00'),
-(1082, 345, 2, 'P', '12:15:00', '12:30:00'),
-(1083, 345, 2, 'P', '12:30:00', '12:45:00'),
-(1084, 345, 2, 'P', '12:45:00', '13:00:00'),
-(1085, 345, 2, 'P', '13:00:00', '13:15:00'),
-(1086, 345, 2, 'P', '13:15:00', '13:30:00'),
-(1087, 345, 2, 'P', '13:30:00', '13:45:00'),
-(1088, 345, 2, 'P', '13:45:00', '14:00:00'),
-(1089, 345, 2, 'P', '14:00:00', '14:15:00'),
-(1090, 345, 2, 'P', '14:15:00', '14:30:00'),
-(1091, 345, 2, 'P', '14:30:00', '14:45:00'),
-(1092, 345, 2, 'P', '14:45:00', '15:00:00'),
-(1093, 345, 2, 'P', '15:00:00', '15:15:00'),
-(1094, 345, 2, 'P', '15:15:00', '15:30:00'),
-(1095, 345, 2, 'P', '15:30:00', '15:45:00'),
-(1096, 345, 2, 'P', '15:45:00', '16:00:00'),
-(1097, 345, 2, 'P', '16:00:00', '16:15:00'),
-(1098, 345, 2, 'P', '16:15:00', '16:30:00'),
-(1099, 345, 2, 'P', '16:30:00', '16:45:00'),
-(1100, 345, 2, 'P', '16:45:00', '17:00:00'),
-(1101, 345, 2, 'P', '17:00:00', '17:15:00'),
-(1102, 345, 2, 'P', '17:15:00', '17:30:00'),
-(1103, 345, 2, 'P', '17:30:00', '17:45:00'),
-(1104, 345, 2, 'P', '17:45:00', '18:00:00'),
-(1105, 345, 2, 'P', '18:00:00', '18:15:00'),
-(1106, 345, 2, 'P', '18:15:00', '18:30:00'),
-(1107, 345, 2, 'P', '18:30:00', '18:45:00'),
-(1108, 345, 2, 'P', '18:45:00', '19:00:00'),
-(1109, 345, 2, 'P', '19:00:00', '19:15:00'),
-(1110, 345, 2, 'P', '19:15:00', '19:30:00'),
-(1111, 345, 2, 'P', '19:30:00', '19:45:00'),
-(1112, 345, 2, 'P', '19:45:00', '20:00:00'),
-(1113, 345, 2, 'P', '20:00:00', '20:15:00'),
-(1114, 345, 2, 'P', '20:15:00', '20:30:00'),
-(1115, 345, 2, 'P', '20:30:00', '20:45:00'),
-(1116, 345, 2, 'P', '20:45:00', '21:00:00'),
-(1117, 346, 2, 'P', '11:00:00', '11:15:00'),
-(1118, 346, 2, 'P', '11:15:00', '11:30:00'),
-(1119, 346, 2, 'P', '11:30:00', '11:45:00'),
-(1120, 346, 2, 'P', '11:45:00', '12:00:00'),
-(1121, 346, 2, 'P', '12:00:00', '12:15:00'),
-(1122, 346, 2, 'P', '12:15:00', '12:30:00'),
-(1123, 346, 2, 'P', '12:30:00', '12:45:00'),
-(1124, 346, 2, 'P', '12:45:00', '13:00:00'),
-(1125, 346, 2, 'P', '13:00:00', '13:15:00'),
-(1126, 346, 2, 'P', '13:15:00', '13:30:00'),
-(1127, 346, 2, 'P', '13:30:00', '13:45:00'),
-(1128, 346, 2, 'P', '13:45:00', '14:00:00'),
-(1129, 346, 2, 'P', '14:00:00', '14:15:00'),
-(1130, 346, 2, 'P', '14:15:00', '14:30:00'),
-(1131, 346, 2, 'P', '14:30:00', '14:45:00'),
-(1132, 346, 2, 'P', '14:45:00', '15:00:00'),
-(1133, 346, 2, 'P', '15:00:00', '15:15:00'),
-(1134, 346, 2, 'P', '15:15:00', '15:30:00'),
-(1135, 346, 2, 'P', '15:30:00', '15:45:00'),
-(1136, 346, 2, 'P', '15:45:00', '16:00:00'),
-(1137, 346, 2, 'P', '16:00:00', '16:15:00'),
-(1138, 346, 2, 'P', '16:15:00', '16:30:00'),
-(1139, 346, 2, 'P', '16:30:00', '16:45:00'),
-(1140, 346, 2, 'P', '16:45:00', '17:00:00'),
-(1141, 346, 2, 'P', '17:00:00', '17:15:00'),
-(1142, 346, 2, 'P', '17:15:00', '17:30:00'),
-(1143, 346, 2, 'P', '17:30:00', '17:45:00'),
-(1144, 346, 2, 'P', '17:45:00', '18:00:00'),
-(1145, 346, 2, 'P', '18:00:00', '18:15:00'),
-(1146, 346, 2, 'P', '18:15:00', '18:30:00'),
-(1147, 346, 2, 'P', '18:30:00', '18:45:00'),
-(1148, 346, 2, 'P', '18:45:00', '19:00:00'),
-(1149, 346, 2, 'P', '19:00:00', '19:15:00'),
-(1150, 346, 2, 'P', '19:15:00', '19:30:00'),
-(1151, 346, 2, 'P', '19:30:00', '19:45:00'),
-(1152, 346, 2, 'P', '19:45:00', '20:00:00'),
-(1153, 346, 2, 'P', '20:00:00', '20:15:00'),
-(1154, 346, 2, 'P', '20:15:00', '20:30:00'),
-(1155, 346, 2, 'P', '20:30:00', '20:45:00'),
-(1156, 346, 2, 'P', '20:45:00', '21:00:00'),
-(1157, 347, 2, 'P', '11:00:00', '11:15:00'),
-(1158, 347, 2, 'P', '11:15:00', '11:30:00'),
-(1159, 347, 2, 'P', '11:30:00', '11:45:00'),
-(1160, 347, 2, 'P', '11:45:00', '12:00:00'),
-(1161, 347, 2, 'P', '12:00:00', '12:15:00'),
-(1162, 347, 2, 'P', '12:15:00', '12:30:00'),
-(1163, 347, 2, 'A', '12:30:00', '12:45:00'),
-(1164, 347, 2, 'P', '12:45:00', '13:00:00'),
-(1165, 347, 2, 'P', '13:00:00', '13:15:00'),
-(1166, 347, 2, 'P', '13:15:00', '13:30:00'),
-(1167, 347, 2, 'P', '13:30:00', '13:45:00'),
-(1168, 347, 2, 'P', '13:45:00', '14:00:00'),
-(1169, 347, 2, 'P', '14:00:00', '14:15:00'),
-(1170, 347, 2, 'P', '14:15:00', '14:30:00'),
-(1171, 347, 2, 'P', '14:30:00', '14:45:00'),
-(1172, 347, 2, 'P', '14:45:00', '15:00:00'),
-(1173, 347, 2, 'P', '15:00:00', '15:15:00'),
-(1174, 347, 2, 'P', '15:15:00', '15:30:00'),
-(1175, 347, 2, 'P', '15:30:00', '15:45:00'),
-(1176, 347, 2, 'P', '15:45:00', '16:00:00'),
-(1177, 347, 2, 'P', '16:00:00', '16:15:00'),
-(1178, 347, 2, 'P', '16:15:00', '16:30:00'),
-(1179, 347, 2, 'P', '16:30:00', '16:45:00'),
-(1180, 347, 2, 'P', '16:45:00', '17:00:00'),
-(1181, 349, 2, 'P', '11:00:00', '11:15:00'),
-(1182, 349, 2, 'P', '11:15:00', '11:30:00'),
-(1183, 349, 2, 'P', '11:30:00', '11:45:00'),
-(1184, 349, 2, 'P', '11:45:00', '12:00:00'),
-(1185, 349, 2, 'P', '12:00:00', '12:15:00'),
-(1186, 349, 2, 'P', '12:15:00', '12:30:00'),
-(1187, 349, 2, 'P', '12:30:00', '12:45:00'),
-(1188, 349, 2, 'P', '12:45:00', '13:00:00'),
-(1189, 349, 2, 'P', '13:00:00', '13:15:00'),
-(1190, 349, 2, 'P', '13:15:00', '13:30:00'),
-(1191, 349, 2, 'P', '13:30:00', '13:45:00'),
-(1192, 349, 2, 'P', '13:45:00', '14:00:00'),
-(1193, 349, 2, 'P', '14:00:00', '14:15:00'),
-(1194, 349, 2, 'P', '14:15:00', '14:30:00'),
-(1195, 349, 2, 'P', '14:30:00', '14:45:00'),
-(1196, 349, 2, 'P', '14:45:00', '15:00:00'),
-(1197, 349, 2, 'P', '15:00:00', '15:15:00'),
-(1198, 349, 2, 'P', '15:15:00', '15:30:00'),
-(1199, 349, 2, 'P', '15:30:00', '15:45:00'),
-(1200, 349, 2, 'P', '15:45:00', '16:00:00'),
-(1201, 349, 2, 'P', '16:00:00', '16:15:00'),
-(1202, 349, 2, 'P', '16:15:00', '16:30:00'),
-(1203, 349, 2, 'P', '16:30:00', '16:45:00'),
-(1204, 349, 2, 'P', '16:45:00', '17:00:00'),
-(1205, 349, 2, 'P', '17:00:00', '17:15:00'),
-(1206, 349, 2, 'P', '17:15:00', '17:30:00'),
-(1207, 349, 2, 'P', '17:30:00', '17:45:00'),
-(1208, 349, 2, 'P', '17:45:00', '18:00:00'),
-(1209, 349, 2, 'P', '18:00:00', '18:15:00'),
-(1210, 349, 2, 'P', '18:15:00', '18:30:00'),
-(1211, 349, 2, 'P', '18:30:00', '18:45:00'),
-(1212, 349, 2, 'P', '18:45:00', '19:00:00'),
-(1213, 349, 2, 'P', '19:00:00', '19:15:00'),
-(1214, 349, 2, 'P', '19:15:00', '19:30:00'),
-(1215, 349, 2, 'P', '19:30:00', '19:45:00'),
-(1216, 349, 2, 'P', '19:45:00', '20:00:00'),
-(1217, 349, 2, 'P', '20:00:00', '20:15:00'),
-(1218, 349, 2, 'P', '20:15:00', '20:30:00'),
-(1219, 349, 2, 'P', '20:30:00', '20:45:00'),
-(1220, 349, 2, 'P', '20:45:00', '21:00:00'),
-(1221, 350, 2, 'P', '11:00:00', '11:15:00'),
-(1222, 350, 2, 'P', '11:15:00', '11:30:00'),
-(1223, 350, 2, 'P', '11:30:00', '11:45:00'),
-(1224, 350, 2, 'P', '11:45:00', '12:00:00'),
-(1225, 350, 2, 'P', '12:00:00', '12:15:00'),
-(1226, 350, 2, 'P', '12:15:00', '12:30:00'),
-(1227, 350, 2, 'P', '12:30:00', '12:45:00'),
-(1228, 350, 2, 'P', '12:45:00', '13:00:00'),
-(1229, 350, 2, 'P', '13:00:00', '13:15:00'),
-(1230, 350, 2, 'P', '13:15:00', '13:30:00'),
-(1231, 350, 2, 'P', '13:30:00', '13:45:00'),
-(1232, 350, 2, 'P', '13:45:00', '14:00:00'),
-(1233, 350, 2, 'P', '14:00:00', '14:15:00'),
-(1234, 350, 2, 'P', '14:15:00', '14:30:00'),
-(1235, 350, 2, 'P', '14:30:00', '14:45:00'),
-(1236, 350, 2, 'P', '14:45:00', '15:00:00'),
-(1237, 350, 2, 'P', '15:00:00', '15:15:00'),
-(1238, 350, 2, 'P', '15:15:00', '15:30:00'),
-(1239, 350, 2, 'P', '15:30:00', '15:45:00'),
-(1240, 350, 2, 'P', '15:45:00', '16:00:00'),
-(1241, 350, 2, 'P', '16:00:00', '16:15:00'),
-(1242, 350, 2, 'P', '16:15:00', '16:30:00'),
-(1243, 350, 2, 'P', '16:30:00', '16:45:00'),
-(1244, 350, 2, 'P', '16:45:00', '17:00:00'),
-(1245, 350, 2, 'P', '17:00:00', '17:15:00'),
-(1246, 350, 2, 'P', '17:15:00', '17:30:00'),
-(1247, 350, 2, 'P', '17:30:00', '17:45:00'),
-(1248, 350, 2, 'P', '17:45:00', '18:00:00'),
-(1249, 350, 2, 'P', '18:00:00', '18:15:00'),
-(1250, 350, 2, 'P', '18:15:00', '18:30:00'),
-(1251, 350, 2, 'P', '18:30:00', '18:45:00'),
-(1252, 350, 2, 'P', '18:45:00', '19:00:00'),
-(1253, 350, 2, 'P', '19:00:00', '19:15:00'),
-(1254, 350, 2, 'P', '19:15:00', '19:30:00'),
-(1255, 350, 2, 'P', '19:30:00', '19:45:00'),
-(1256, 350, 2, 'P', '19:45:00', '20:00:00'),
-(1257, 350, 2, 'P', '20:00:00', '20:15:00'),
-(1258, 350, 2, 'P', '20:15:00', '20:30:00'),
-(1259, 350, 2, 'P', '20:30:00', '20:45:00'),
-(1260, 350, 2, 'P', '20:45:00', '21:00:00'),
-(1261, 351, 2, 'P', '11:00:00', '11:15:00'),
-(1262, 351, 2, 'P', '11:15:00', '11:30:00'),
-(1263, 351, 2, 'P', '11:30:00', '11:45:00'),
-(1264, 351, 2, 'P', '11:45:00', '12:00:00'),
-(1265, 351, 2, 'P', '12:00:00', '12:15:00'),
-(1266, 351, 2, 'P', '12:15:00', '12:30:00'),
-(1267, 351, 2, 'P', '12:30:00', '12:45:00'),
-(1268, 351, 2, 'P', '12:45:00', '13:00:00'),
-(1269, 351, 2, 'P', '13:00:00', '13:15:00'),
-(1270, 351, 2, 'P', '13:15:00', '13:30:00'),
-(1271, 351, 2, 'P', '13:30:00', '13:45:00'),
-(1272, 351, 2, 'P', '13:45:00', '14:00:00'),
-(1273, 351, 2, 'P', '14:00:00', '14:15:00'),
-(1274, 351, 2, 'P', '14:15:00', '14:30:00'),
-(1275, 351, 2, 'P', '14:30:00', '14:45:00'),
-(1276, 351, 2, 'P', '14:45:00', '15:00:00'),
-(1277, 351, 2, 'P', '15:00:00', '15:15:00'),
-(1278, 351, 2, 'P', '15:15:00', '15:30:00'),
-(1279, 351, 2, 'P', '15:30:00', '15:45:00'),
-(1280, 351, 2, 'P', '15:45:00', '16:00:00'),
-(1281, 351, 2, 'P', '16:00:00', '16:15:00'),
-(1282, 351, 2, 'P', '16:15:00', '16:30:00'),
-(1283, 351, 2, 'P', '16:30:00', '16:45:00'),
-(1284, 351, 2, 'P', '16:45:00', '17:00:00'),
-(1285, 351, 2, 'P', '17:00:00', '17:15:00'),
-(1286, 351, 2, 'P', '17:15:00', '17:30:00'),
-(1287, 351, 2, 'P', '17:30:00', '17:45:00'),
-(1288, 351, 2, 'P', '17:45:00', '18:00:00'),
-(1289, 351, 2, 'P', '18:00:00', '18:15:00'),
-(1290, 351, 2, 'P', '18:15:00', '18:30:00'),
-(1291, 351, 2, 'P', '18:30:00', '18:45:00'),
-(1292, 351, 2, 'P', '18:45:00', '19:00:00'),
-(1293, 351, 2, 'P', '19:00:00', '19:15:00'),
-(1294, 351, 2, 'P', '19:15:00', '19:30:00'),
-(1295, 351, 2, 'P', '19:30:00', '19:45:00'),
-(1296, 351, 2, 'P', '19:45:00', '20:00:00'),
-(1297, 351, 2, 'P', '20:00:00', '20:15:00'),
-(1298, 351, 2, 'P', '20:15:00', '20:30:00'),
-(1299, 351, 2, 'P', '20:30:00', '20:45:00'),
-(1300, 351, 2, 'P', '20:45:00', '21:00:00'),
-(1301, 352, 2, 'P', '11:00:00', '11:15:00'),
-(1302, 352, 2, 'P', '11:15:00', '11:30:00'),
-(1303, 352, 2, 'P', '11:30:00', '11:45:00'),
-(1304, 352, 2, 'P', '11:45:00', '12:00:00'),
-(1305, 352, 2, 'P', '12:00:00', '12:15:00'),
-(1306, 352, 2, 'P', '12:15:00', '12:30:00'),
-(1307, 352, 2, 'P', '12:30:00', '12:45:00'),
-(1308, 352, 2, 'P', '12:45:00', '13:00:00'),
-(1309, 352, 2, 'P', '13:00:00', '13:15:00'),
-(1310, 352, 2, 'P', '13:15:00', '13:30:00'),
-(1311, 352, 2, 'P', '13:30:00', '13:45:00'),
-(1312, 352, 2, 'P', '13:45:00', '14:00:00'),
-(1313, 352, 2, 'P', '14:00:00', '14:15:00'),
-(1314, 352, 2, 'P', '14:15:00', '14:30:00'),
-(1315, 352, 2, 'P', '14:30:00', '14:45:00'),
-(1316, 352, 2, 'P', '14:45:00', '15:00:00'),
-(1317, 352, 2, 'P', '15:00:00', '15:15:00'),
-(1318, 352, 2, 'P', '15:15:00', '15:30:00'),
-(1319, 352, 2, 'P', '15:30:00', '15:45:00'),
-(1320, 352, 2, 'P', '15:45:00', '16:00:00'),
-(1321, 352, 2, 'P', '16:00:00', '16:15:00'),
-(1322, 352, 2, 'P', '16:15:00', '16:30:00'),
-(1323, 352, 2, 'P', '16:30:00', '16:45:00'),
-(1324, 352, 2, 'P', '16:45:00', '17:00:00'),
-(1325, 352, 2, 'P', '17:00:00', '17:15:00'),
-(1326, 352, 2, 'P', '17:15:00', '17:30:00'),
-(1327, 352, 2, 'P', '17:30:00', '17:45:00'),
-(1328, 352, 2, 'P', '17:45:00', '18:00:00'),
-(1329, 352, 2, 'P', '18:00:00', '18:15:00'),
-(1330, 352, 2, 'P', '18:15:00', '18:30:00'),
-(1331, 352, 2, 'P', '18:30:00', '18:45:00'),
-(1332, 352, 2, 'P', '18:45:00', '19:00:00'),
-(1333, 352, 2, 'P', '19:00:00', '19:15:00'),
-(1334, 352, 2, 'P', '19:15:00', '19:30:00'),
-(1335, 352, 2, 'P', '19:30:00', '19:45:00'),
-(1336, 352, 2, 'P', '19:45:00', '20:00:00'),
-(1337, 352, 2, 'P', '20:00:00', '20:15:00'),
-(1338, 352, 2, 'P', '20:15:00', '20:30:00'),
-(1339, 352, 2, 'P', '20:30:00', '20:45:00'),
-(1340, 352, 2, 'P', '20:45:00', '21:00:00'),
-(1341, 353, 2, 'P', '11:00:00', '11:15:00'),
-(1342, 353, 2, 'P', '11:15:00', '11:30:00'),
-(1343, 353, 2, 'P', '11:30:00', '11:45:00'),
-(1344, 353, 2, 'P', '11:45:00', '12:00:00'),
-(1345, 353, 2, 'P', '12:00:00', '12:15:00'),
-(1346, 353, 2, 'P', '12:15:00', '12:30:00'),
-(1347, 353, 2, 'P', '12:30:00', '12:45:00'),
-(1348, 353, 2, 'P', '12:45:00', '13:00:00'),
-(1349, 353, 2, 'P', '13:00:00', '13:15:00'),
-(1350, 353, 2, 'P', '13:15:00', '13:30:00'),
-(1351, 353, 2, 'P', '13:30:00', '13:45:00'),
-(1352, 353, 2, 'P', '13:45:00', '14:00:00'),
-(1353, 353, 2, 'P', '14:00:00', '14:15:00'),
-(1354, 353, 2, 'P', '14:15:00', '14:30:00'),
-(1355, 353, 2, 'P', '14:30:00', '14:45:00'),
-(1356, 353, 2, 'P', '14:45:00', '15:00:00'),
-(1357, 353, 2, 'P', '15:00:00', '15:15:00'),
-(1358, 353, 2, 'P', '15:15:00', '15:30:00'),
-(1359, 353, 2, 'P', '15:30:00', '15:45:00'),
-(1360, 353, 2, 'P', '15:45:00', '16:00:00'),
-(1361, 353, 2, 'P', '16:00:00', '16:15:00'),
-(1362, 353, 2, 'P', '16:15:00', '16:30:00'),
-(1363, 353, 2, 'P', '16:30:00', '16:45:00'),
-(1364, 353, 2, 'P', '16:45:00', '17:00:00'),
-(1365, 353, 2, 'P', '17:00:00', '17:15:00'),
-(1366, 353, 2, 'P', '17:15:00', '17:30:00'),
-(1367, 353, 2, 'P', '17:30:00', '17:45:00'),
-(1368, 353, 2, 'P', '17:45:00', '18:00:00'),
-(1369, 353, 2, 'P', '18:00:00', '18:15:00'),
-(1370, 353, 2, 'P', '18:15:00', '18:30:00'),
-(1371, 353, 2, 'P', '18:30:00', '18:45:00'),
-(1372, 353, 2, 'P', '18:45:00', '19:00:00'),
-(1373, 353, 2, 'P', '19:00:00', '19:15:00'),
-(1374, 353, 2, 'P', '19:15:00', '19:30:00'),
-(1375, 353, 2, 'P', '19:30:00', '19:45:00'),
-(1376, 353, 2, 'P', '19:45:00', '20:00:00'),
-(1377, 353, 2, 'P', '20:00:00', '20:15:00'),
-(1378, 353, 2, 'P', '20:15:00', '20:30:00'),
-(1379, 353, 2, 'P', '20:30:00', '20:45:00'),
-(1380, 353, 2, 'P', '20:45:00', '21:00:00'),
-(1381, 354, 2, 'P', '11:00:00', '11:15:00'),
-(1382, 354, 2, 'P', '11:15:00', '11:30:00'),
-(1383, 354, 2, 'P', '11:30:00', '11:45:00'),
-(1384, 354, 2, 'P', '11:45:00', '12:00:00'),
-(1385, 354, 2, 'P', '12:00:00', '12:15:00'),
-(1386, 354, 2, 'P', '12:15:00', '12:30:00'),
-(1387, 354, 2, 'P', '12:30:00', '12:45:00'),
-(1388, 354, 2, 'P', '12:45:00', '13:00:00'),
-(1389, 354, 2, 'P', '13:00:00', '13:15:00'),
-(1390, 354, 2, 'P', '13:15:00', '13:30:00'),
-(1391, 354, 2, 'P', '13:30:00', '13:45:00'),
-(1392, 354, 2, 'P', '13:45:00', '14:00:00'),
-(1393, 354, 2, 'P', '14:00:00', '14:15:00'),
-(1394, 354, 2, 'P', '14:15:00', '14:30:00'),
-(1395, 354, 2, 'P', '14:30:00', '14:45:00'),
-(1396, 354, 2, 'P', '14:45:00', '15:00:00'),
-(1397, 354, 2, 'P', '15:00:00', '15:15:00'),
-(1398, 354, 2, 'P', '15:15:00', '15:30:00'),
-(1399, 354, 2, 'P', '15:30:00', '15:45:00'),
-(1400, 354, 2, 'P', '15:45:00', '16:00:00'),
-(1401, 354, 2, 'P', '16:00:00', '16:15:00'),
-(1402, 354, 2, 'P', '16:15:00', '16:30:00'),
-(1403, 354, 2, 'P', '16:30:00', '16:45:00'),
-(1404, 354, 2, 'P', '16:45:00', '17:00:00'),
-(1405, 391, 2, 'P', '11:00:00', '11:15:00'),
-(1406, 391, 2, 'P', '11:15:00', '11:30:00'),
-(1407, 391, 2, 'P', '11:30:00', '11:45:00'),
-(1408, 391, 2, 'P', '11:45:00', '12:00:00'),
-(1409, 391, 2, 'P', '12:00:00', '12:15:00'),
-(1410, 391, 2, 'P', '12:15:00', '12:30:00'),
-(1411, 391, 2, 'P', '12:30:00', '12:45:00'),
-(1412, 391, 2, 'P', '12:45:00', '13:00:00'),
-(1413, 391, 2, 'P', '13:00:00', '13:15:00'),
-(1414, 391, 2, 'P', '13:15:00', '13:30:00'),
-(1415, 391, 2, 'P', '13:30:00', '13:45:00'),
-(1416, 391, 2, 'P', '13:45:00', '14:00:00'),
-(1417, 391, 2, 'P', '14:00:00', '14:15:00'),
-(1418, 391, 2, 'P', '14:15:00', '14:30:00'),
-(1419, 391, 2, 'P', '14:30:00', '14:45:00'),
-(1420, 391, 2, 'P', '14:45:00', '15:00:00'),
-(1421, 391, 2, 'P', '15:00:00', '15:15:00'),
-(1422, 391, 2, 'P', '15:15:00', '15:30:00'),
-(1423, 391, 2, 'P', '15:30:00', '15:45:00'),
-(1424, 391, 2, 'P', '15:45:00', '16:00:00'),
-(1425, 391, 2, 'P', '16:00:00', '16:15:00'),
-(1426, 391, 2, 'P', '16:15:00', '16:30:00'),
-(1427, 391, 2, 'P', '16:30:00', '16:45:00'),
-(1428, 391, 2, 'P', '16:45:00', '17:00:00'),
-(1429, 391, 2, 'P', '17:00:00', '17:15:00'),
-(1430, 391, 2, 'P', '17:15:00', '17:30:00'),
-(1431, 391, 2, 'P', '17:30:00', '17:45:00'),
-(1432, 391, 2, 'P', '17:45:00', '18:00:00'),
-(1433, 391, 2, 'P', '18:00:00', '18:15:00'),
-(1434, 391, 2, 'P', '18:15:00', '18:30:00'),
-(1435, 391, 2, 'P', '18:30:00', '18:45:00'),
-(1436, 391, 2, 'P', '18:45:00', '19:00:00'),
-(1437, 391, 2, 'P', '19:00:00', '19:15:00'),
-(1438, 391, 2, 'P', '19:15:00', '19:30:00'),
-(1439, 391, 2, 'P', '19:30:00', '19:45:00'),
-(1440, 391, 2, 'P', '19:45:00', '20:00:00'),
-(1441, 391, 2, 'P', '20:00:00', '20:15:00'),
-(1442, 391, 2, 'P', '20:15:00', '20:30:00'),
-(1443, 391, 2, 'P', '20:30:00', '20:45:00'),
-(1444, 391, 2, 'P', '20:45:00', '21:00:00'),
-(1445, 392, 2, 'P', '11:00:00', '11:15:00'),
-(1446, 392, 2, 'P', '11:15:00', '11:30:00'),
-(1447, 392, 2, 'P', '11:30:00', '11:45:00'),
-(1448, 392, 2, 'P', '11:45:00', '12:00:00'),
-(1449, 392, 2, 'P', '12:00:00', '12:15:00'),
-(1450, 392, 2, 'P', '12:15:00', '12:30:00'),
-(1451, 392, 2, 'P', '12:30:00', '12:45:00'),
-(1452, 392, 2, 'P', '12:45:00', '13:00:00'),
-(1453, 392, 2, 'P', '13:00:00', '13:15:00'),
-(1454, 392, 2, 'P', '13:15:00', '13:30:00'),
-(1455, 392, 2, 'P', '13:30:00', '13:45:00'),
-(1456, 392, 2, 'P', '13:45:00', '14:00:00'),
-(1457, 392, 2, 'P', '14:00:00', '14:15:00'),
-(1458, 392, 2, 'P', '14:15:00', '14:30:00'),
-(1459, 392, 2, 'P', '14:30:00', '14:45:00'),
-(1460, 392, 2, 'P', '14:45:00', '15:00:00'),
-(1461, 392, 2, 'P', '15:00:00', '15:15:00'),
-(1462, 392, 2, 'P', '15:15:00', '15:30:00'),
-(1463, 392, 2, 'P', '15:30:00', '15:45:00'),
-(1464, 392, 2, 'P', '15:45:00', '16:00:00'),
-(1465, 392, 2, 'P', '16:00:00', '16:15:00'),
-(1466, 392, 2, 'P', '16:15:00', '16:30:00'),
-(1467, 392, 2, 'P', '16:30:00', '16:45:00'),
-(1468, 392, 2, 'P', '16:45:00', '17:00:00'),
-(1469, 392, 2, 'P', '17:00:00', '17:15:00'),
-(1470, 392, 2, 'P', '17:15:00', '17:30:00'),
-(1471, 392, 2, 'P', '17:30:00', '17:45:00'),
-(1472, 392, 2, 'P', '17:45:00', '18:00:00'),
-(1473, 392, 2, 'P', '18:00:00', '18:15:00'),
-(1474, 392, 2, 'P', '18:15:00', '18:30:00'),
-(1475, 392, 2, 'P', '18:30:00', '18:45:00'),
-(1476, 392, 2, 'P', '18:45:00', '19:00:00'),
-(1477, 392, 2, 'P', '19:00:00', '19:15:00'),
-(1478, 392, 2, 'P', '19:15:00', '19:30:00'),
-(1479, 392, 2, 'P', '19:30:00', '19:45:00'),
-(1480, 392, 2, 'P', '19:45:00', '20:00:00'),
-(1481, 392, 2, 'P', '20:00:00', '20:15:00'),
-(1482, 392, 2, 'P', '20:15:00', '20:30:00'),
-(1483, 392, 2, 'P', '20:30:00', '20:45:00'),
-(1484, 392, 2, 'P', '20:45:00', '21:00:00'),
-(1485, 393, 2, 'P', '11:00:00', '11:15:00'),
-(1486, 393, 2, 'P', '11:15:00', '11:30:00'),
-(1487, 393, 2, 'P', '11:30:00', '11:45:00'),
-(1488, 393, 2, 'P', '11:45:00', '12:00:00'),
-(1489, 393, 2, 'P', '12:00:00', '12:15:00'),
-(1490, 393, 2, 'P', '12:15:00', '12:30:00'),
-(1491, 393, 2, 'P', '12:30:00', '12:45:00'),
-(1492, 393, 2, 'P', '12:45:00', '13:00:00'),
-(1493, 393, 2, 'P', '13:00:00', '13:15:00'),
-(1494, 393, 2, 'P', '13:15:00', '13:30:00'),
-(1495, 393, 2, 'P', '13:30:00', '13:45:00'),
-(1496, 393, 2, 'P', '13:45:00', '14:00:00'),
-(1497, 393, 2, 'P', '14:00:00', '14:15:00'),
-(1498, 393, 2, 'P', '14:15:00', '14:30:00'),
-(1499, 393, 2, 'P', '14:30:00', '14:45:00'),
-(1500, 393, 2, 'P', '14:45:00', '15:00:00'),
-(1501, 393, 2, 'P', '15:00:00', '15:15:00'),
-(1502, 393, 2, 'P', '15:15:00', '15:30:00'),
-(1503, 393, 2, 'P', '15:30:00', '15:45:00'),
-(1504, 393, 2, 'P', '15:45:00', '16:00:00'),
-(1505, 393, 2, 'P', '16:00:00', '16:15:00'),
-(1506, 393, 2, 'P', '16:15:00', '16:30:00'),
-(1507, 393, 2, 'P', '16:30:00', '16:45:00'),
-(1508, 393, 2, 'P', '16:45:00', '17:00:00'),
-(1509, 393, 2, 'P', '17:00:00', '17:15:00'),
-(1510, 393, 2, 'P', '17:15:00', '17:30:00'),
-(1511, 393, 2, 'P', '17:30:00', '17:45:00'),
-(1512, 393, 2, 'P', '17:45:00', '18:00:00'),
-(1513, 393, 2, 'P', '18:00:00', '18:15:00'),
-(1514, 393, 2, 'P', '18:15:00', '18:30:00'),
-(1515, 393, 2, 'P', '18:30:00', '18:45:00'),
-(1516, 393, 2, 'P', '18:45:00', '19:00:00'),
-(1517, 393, 2, 'P', '19:00:00', '19:15:00'),
-(1518, 393, 2, 'P', '19:15:00', '19:30:00'),
-(1519, 393, 2, 'P', '19:30:00', '19:45:00'),
-(1520, 393, 2, 'P', '19:45:00', '20:00:00'),
-(1521, 393, 2, 'P', '20:00:00', '20:15:00'),
-(1522, 393, 2, 'P', '20:15:00', '20:30:00'),
-(1523, 393, 2, 'P', '20:30:00', '20:45:00'),
-(1524, 393, 2, 'P', '20:45:00', '21:00:00'),
-(1525, 394, 2, 'P', '11:00:00', '11:15:00'),
-(1526, 394, 2, 'P', '11:15:00', '11:30:00'),
-(1527, 394, 2, 'P', '11:30:00', '11:45:00'),
-(1528, 394, 2, 'P', '11:45:00', '12:00:00'),
-(1529, 394, 2, 'P', '12:00:00', '12:15:00'),
-(1530, 394, 2, 'P', '12:15:00', '12:30:00'),
-(1531, 394, 2, 'P', '12:30:00', '12:45:00'),
-(1532, 394, 2, 'P', '12:45:00', '13:00:00'),
-(1533, 394, 2, 'P', '13:00:00', '13:15:00'),
-(1534, 394, 2, 'P', '13:15:00', '13:30:00'),
-(1535, 394, 2, 'P', '13:30:00', '13:45:00'),
-(1536, 394, 2, 'P', '13:45:00', '14:00:00'),
-(1537, 394, 2, 'P', '14:00:00', '14:15:00'),
-(1538, 394, 2, 'P', '14:15:00', '14:30:00'),
-(1539, 394, 2, 'P', '14:30:00', '14:45:00'),
-(1540, 394, 2, 'P', '14:45:00', '15:00:00'),
-(1541, 394, 2, 'P', '15:00:00', '15:15:00'),
-(1542, 394, 2, 'P', '15:15:00', '15:30:00'),
-(1543, 394, 2, 'P', '15:30:00', '15:45:00'),
-(1544, 394, 2, 'P', '15:45:00', '16:00:00'),
-(1545, 394, 2, 'P', '16:00:00', '16:15:00'),
-(1546, 394, 2, 'P', '16:15:00', '16:30:00'),
-(1547, 394, 2, 'P', '16:30:00', '16:45:00'),
-(1548, 394, 2, 'P', '16:45:00', '17:00:00'),
-(1549, 394, 2, 'P', '17:00:00', '17:15:00'),
-(1550, 394, 2, 'P', '17:15:00', '17:30:00'),
-(1551, 394, 2, 'P', '17:30:00', '17:45:00'),
-(1552, 394, 2, 'P', '17:45:00', '18:00:00'),
-(1553, 394, 2, 'P', '18:00:00', '18:15:00'),
-(1554, 394, 2, 'P', '18:15:00', '18:30:00'),
-(1555, 394, 2, 'P', '18:30:00', '18:45:00'),
-(1556, 394, 2, 'P', '18:45:00', '19:00:00'),
-(1557, 394, 2, 'P', '19:00:00', '19:15:00'),
-(1558, 394, 2, 'P', '19:15:00', '19:30:00'),
-(1559, 394, 2, 'P', '19:30:00', '19:45:00'),
-(1560, 394, 2, 'P', '19:45:00', '20:00:00'),
-(1561, 394, 2, 'P', '20:00:00', '20:15:00'),
-(1562, 394, 2, 'P', '20:15:00', '20:30:00'),
-(1563, 394, 2, 'P', '20:30:00', '20:45:00'),
-(1564, 394, 2, 'P', '20:45:00', '21:00:00'),
-(1565, 395, 2, 'P', '11:00:00', '11:15:00'),
-(1566, 395, 2, 'P', '11:15:00', '11:30:00'),
-(1567, 395, 2, 'P', '11:30:00', '11:45:00'),
-(1568, 395, 2, 'P', '11:45:00', '12:00:00'),
-(1569, 395, 2, 'P', '12:00:00', '12:15:00'),
-(1570, 395, 2, 'P', '12:15:00', '12:30:00'),
-(1571, 395, 2, 'P', '12:30:00', '12:45:00'),
-(1572, 395, 2, 'P', '12:45:00', '13:00:00'),
-(1573, 395, 2, 'P', '13:00:00', '13:15:00'),
-(1574, 395, 2, 'P', '13:15:00', '13:30:00'),
-(1575, 395, 2, 'P', '13:30:00', '13:45:00'),
-(1576, 395, 2, 'P', '13:45:00', '14:00:00'),
-(1577, 395, 2, 'P', '14:00:00', '14:15:00'),
-(1578, 395, 2, 'P', '14:15:00', '14:30:00'),
-(1579, 395, 2, 'P', '14:30:00', '14:45:00'),
-(1580, 395, 2, 'P', '14:45:00', '15:00:00'),
-(1581, 395, 2, 'P', '15:00:00', '15:15:00'),
-(1582, 395, 2, 'P', '15:15:00', '15:30:00'),
-(1583, 395, 2, 'P', '15:30:00', '15:45:00'),
-(1584, 395, 2, 'P', '15:45:00', '16:00:00'),
-(1585, 395, 2, 'P', '16:00:00', '16:15:00'),
-(1586, 395, 2, 'P', '16:15:00', '16:30:00'),
-(1587, 395, 2, 'P', '16:30:00', '16:45:00'),
-(1588, 395, 2, 'P', '16:45:00', '17:00:00'),
-(1589, 395, 2, 'P', '17:00:00', '17:15:00'),
-(1590, 395, 2, 'P', '17:15:00', '17:30:00'),
-(1591, 395, 2, 'P', '17:30:00', '17:45:00'),
-(1592, 395, 2, 'P', '17:45:00', '18:00:00'),
-(1593, 395, 2, 'P', '18:00:00', '18:15:00'),
-(1594, 395, 2, 'P', '18:15:00', '18:30:00'),
-(1595, 395, 2, 'P', '18:30:00', '18:45:00'),
-(1596, 395, 2, 'P', '18:45:00', '19:00:00'),
-(1597, 395, 2, 'P', '19:00:00', '19:15:00'),
-(1598, 395, 2, 'P', '19:15:00', '19:30:00'),
-(1599, 395, 2, 'P', '19:30:00', '19:45:00'),
-(1600, 395, 2, 'P', '19:45:00', '20:00:00'),
-(1601, 395, 2, 'P', '20:00:00', '20:15:00'),
-(1602, 395, 2, 'P', '20:15:00', '20:30:00'),
-(1603, 395, 2, 'P', '20:30:00', '20:45:00'),
-(1604, 395, 2, 'P', '20:45:00', '21:00:00'),
-(1605, 396, 2, 'P', '11:00:00', '11:15:00'),
-(1606, 396, 2, 'P', '11:15:00', '11:30:00'),
-(1607, 396, 2, 'P', '11:30:00', '11:45:00'),
-(1608, 396, 2, 'P', '11:45:00', '12:00:00'),
-(1609, 396, 2, 'P', '12:00:00', '12:15:00'),
-(1610, 396, 2, 'P', '12:15:00', '12:30:00'),
-(1611, 396, 2, 'P', '12:30:00', '12:45:00'),
-(1612, 396, 2, 'P', '12:45:00', '13:00:00'),
-(1613, 396, 2, 'P', '13:00:00', '13:15:00'),
-(1614, 396, 2, 'P', '13:15:00', '13:30:00'),
-(1615, 396, 2, 'P', '13:30:00', '13:45:00'),
-(1616, 396, 2, 'P', '13:45:00', '14:00:00'),
-(1617, 396, 2, 'P', '14:00:00', '14:15:00'),
-(1618, 396, 2, 'P', '14:15:00', '14:30:00'),
-(1619, 396, 2, 'P', '14:30:00', '14:45:00'),
-(1620, 396, 2, 'P', '14:45:00', '15:00:00'),
-(1621, 396, 2, 'P', '15:00:00', '15:15:00'),
-(1622, 396, 2, 'P', '15:15:00', '15:30:00'),
-(1623, 396, 2, 'P', '15:30:00', '15:45:00'),
-(1624, 396, 2, 'P', '15:45:00', '16:00:00'),
-(1625, 396, 2, 'P', '16:00:00', '16:15:00'),
-(1626, 396, 2, 'P', '16:15:00', '16:30:00'),
-(1627, 396, 2, 'P', '16:30:00', '16:45:00'),
-(1628, 396, 2, 'P', '16:45:00', '17:00:00');
+(1, 343, 2, 'P', '11:00:00', '11:15:00'),
+(2, 343, 2, 'P', '11:15:00', '11:30:00'),
+(3, 343, 2, 'P', '11:30:00', '11:45:00'),
+(4, 343, 2, 'P', '11:45:00', '12:00:00'),
+(5, 343, 2, 'P', '12:00:00', '12:15:00'),
+(6, 343, 2, 'P', '12:15:00', '12:30:00'),
+(7, 343, 2, 'P', '12:30:00', '12:45:00'),
+(8, 343, 2, 'P', '12:45:00', '13:00:00'),
+(9, 343, 2, 'P', '13:00:00', '13:15:00'),
+(10, 343, 2, 'P', '13:15:00', '13:30:00'),
+(11, 343, 2, 'P', '13:30:00', '13:45:00'),
+(12, 343, 2, 'P', '13:45:00', '14:00:00'),
+(13, 343, 2, 'P', '14:00:00', '14:15:00'),
+(14, 343, 2, 'P', '14:15:00', '14:30:00'),
+(15, 343, 2, 'P', '14:30:00', '14:45:00'),
+(16, 343, 2, 'P', '14:45:00', '15:00:00'),
+(17, 343, 2, 'P', '15:00:00', '15:15:00'),
+(18, 343, 2, 'P', '15:15:00', '15:30:00'),
+(19, 343, 2, 'P', '15:30:00', '15:45:00'),
+(20, 343, 2, 'P', '15:45:00', '16:00:00'),
+(21, 343, 2, 'P', '16:00:00', '16:15:00'),
+(22, 343, 2, 'P', '16:15:00', '16:30:00'),
+(23, 343, 2, 'P', '16:30:00', '16:45:00'),
+(24, 343, 2, 'P', '16:45:00', '17:00:00'),
+(25, 343, 2, 'P', '17:00:00', '17:15:00'),
+(26, 343, 2, 'P', '17:15:00', '17:30:00'),
+(27, 343, 2, 'P', '17:30:00', '17:45:00'),
+(28, 343, 2, 'P', '17:45:00', '18:00:00'),
+(29, 343, 2, 'P', '18:00:00', '18:15:00'),
+(30, 343, 2, 'P', '18:15:00', '18:30:00'),
+(31, 343, 2, 'P', '18:30:00', '18:45:00'),
+(32, 343, 2, 'P', '18:45:00', '19:00:00'),
+(33, 343, 2, 'P', '19:00:00', '19:15:00'),
+(34, 343, 2, 'P', '19:15:00', '19:30:00'),
+(35, 343, 2, 'P', '19:30:00', '19:45:00'),
+(36, 343, 2, 'P', '19:45:00', '20:00:00'),
+(37, 343, 2, 'P', '20:00:00', '20:15:00'),
+(38, 343, 2, 'P', '20:15:00', '20:30:00'),
+(39, 343, 2, 'P', '20:30:00', '20:45:00'),
+(40, 343, 2, 'P', '20:45:00', '21:00:00'),
+(41, 344, 2, 'P', '11:00:00', '11:15:00'),
+(42, 344, 2, 'P', '11:15:00', '11:30:00'),
+(43, 344, 2, 'P', '11:30:00', '11:45:00'),
+(44, 344, 2, 'P', '11:45:00', '12:00:00'),
+(45, 344, 2, 'P', '12:00:00', '12:15:00'),
+(46, 344, 2, 'P', '12:15:00', '12:30:00'),
+(47, 344, 2, 'P', '12:30:00', '12:45:00'),
+(48, 344, 2, 'P', '12:45:00', '13:00:00'),
+(49, 344, 2, 'P', '13:00:00', '13:15:00'),
+(50, 344, 2, 'P', '13:15:00', '13:30:00'),
+(51, 344, 2, 'P', '13:30:00', '13:45:00'),
+(52, 344, 2, 'P', '13:45:00', '14:00:00'),
+(53, 344, 2, 'P', '14:00:00', '14:15:00'),
+(54, 344, 2, 'P', '14:15:00', '14:30:00'),
+(55, 344, 2, 'P', '14:30:00', '14:45:00'),
+(56, 344, 2, 'P', '14:45:00', '15:00:00'),
+(57, 344, 2, 'P', '15:00:00', '15:15:00'),
+(58, 344, 2, 'P', '15:15:00', '15:30:00'),
+(59, 344, 2, 'P', '15:30:00', '15:45:00'),
+(60, 344, 2, 'P', '15:45:00', '16:00:00'),
+(61, 344, 2, 'P', '16:00:00', '16:15:00'),
+(62, 344, 2, 'P', '16:15:00', '16:30:00'),
+(63, 344, 2, 'P', '16:30:00', '16:45:00'),
+(64, 344, 2, 'P', '16:45:00', '17:00:00'),
+(65, 344, 2, 'P', '17:00:00', '17:15:00'),
+(66, 344, 2, 'P', '17:15:00', '17:30:00'),
+(67, 344, 2, 'P', '17:30:00', '17:45:00'),
+(68, 344, 2, 'P', '17:45:00', '18:00:00'),
+(69, 344, 2, 'P', '18:00:00', '18:15:00'),
+(70, 344, 2, 'P', '18:15:00', '18:30:00'),
+(71, 344, 2, 'P', '18:30:00', '18:45:00'),
+(72, 344, 2, 'P', '18:45:00', '19:00:00'),
+(73, 344, 2, 'P', '19:00:00', '19:15:00'),
+(74, 344, 2, 'P', '19:15:00', '19:30:00'),
+(75, 344, 2, 'P', '19:30:00', '19:45:00'),
+(76, 344, 2, 'P', '19:45:00', '20:00:00'),
+(77, 344, 2, 'P', '20:00:00', '20:15:00'),
+(78, 344, 2, 'P', '20:15:00', '20:30:00'),
+(79, 344, 2, 'P', '20:30:00', '20:45:00'),
+(80, 344, 2, 'P', '20:45:00', '21:00:00'),
+(81, 345, 2, 'P', '11:00:00', '11:15:00'),
+(82, 345, 2, 'P', '11:15:00', '11:30:00'),
+(83, 345, 2, 'P', '11:30:00', '11:45:00'),
+(84, 345, 2, 'P', '11:45:00', '12:00:00'),
+(85, 345, 2, 'P', '12:00:00', '12:15:00'),
+(86, 345, 2, 'P', '12:15:00', '12:30:00'),
+(87, 345, 2, 'P', '12:30:00', '12:45:00'),
+(88, 345, 2, 'P', '12:45:00', '13:00:00'),
+(89, 345, 2, 'P', '13:00:00', '13:15:00'),
+(90, 345, 2, 'P', '13:15:00', '13:30:00'),
+(91, 345, 2, 'P', '13:30:00', '13:45:00'),
+(92, 345, 2, 'P', '13:45:00', '14:00:00'),
+(93, 345, 2, 'P', '14:00:00', '14:15:00'),
+(94, 345, 2, 'P', '14:15:00', '14:30:00'),
+(95, 345, 2, 'P', '14:30:00', '14:45:00'),
+(96, 345, 2, 'P', '14:45:00', '15:00:00'),
+(97, 345, 2, 'P', '15:00:00', '15:15:00'),
+(98, 345, 2, 'P', '15:15:00', '15:30:00'),
+(99, 345, 2, 'P', '15:30:00', '15:45:00'),
+(100, 345, 2, 'P', '15:45:00', '16:00:00'),
+(101, 345, 2, 'P', '16:00:00', '16:15:00'),
+(102, 345, 2, 'P', '16:15:00', '16:30:00'),
+(103, 345, 2, 'P', '16:30:00', '16:45:00'),
+(104, 345, 2, 'P', '16:45:00', '17:00:00'),
+(105, 345, 2, 'P', '17:00:00', '17:15:00'),
+(106, 345, 2, 'P', '17:15:00', '17:30:00'),
+(107, 345, 2, 'P', '17:30:00', '17:45:00'),
+(108, 345, 2, 'P', '17:45:00', '18:00:00'),
+(109, 345, 2, 'P', '18:00:00', '18:15:00'),
+(110, 345, 2, 'P', '18:15:00', '18:30:00'),
+(111, 345, 2, 'P', '18:30:00', '18:45:00'),
+(112, 345, 2, 'P', '18:45:00', '19:00:00'),
+(113, 345, 2, 'P', '19:00:00', '19:15:00'),
+(114, 345, 2, 'P', '19:15:00', '19:30:00'),
+(115, 345, 2, 'P', '19:30:00', '19:45:00'),
+(116, 345, 2, 'P', '19:45:00', '20:00:00'),
+(117, 345, 2, 'P', '20:00:00', '20:15:00'),
+(118, 345, 2, 'P', '20:15:00', '20:30:00'),
+(119, 345, 2, 'P', '20:30:00', '20:45:00'),
+(120, 345, 2, 'P', '20:45:00', '21:00:00'),
+(121, 346, 2, 'P', '11:00:00', '11:15:00'),
+(122, 346, 2, 'P', '11:15:00', '11:30:00'),
+(123, 346, 2, 'P', '11:30:00', '11:45:00'),
+(124, 346, 2, 'P', '11:45:00', '12:00:00'),
+(125, 346, 2, 'P', '12:00:00', '12:15:00'),
+(126, 346, 2, 'P', '12:15:00', '12:30:00'),
+(127, 346, 2, 'P', '12:30:00', '12:45:00'),
+(128, 346, 2, 'P', '12:45:00', '13:00:00'),
+(129, 346, 2, 'P', '13:00:00', '13:15:00'),
+(130, 346, 2, 'P', '13:15:00', '13:30:00'),
+(131, 346, 2, 'P', '13:30:00', '13:45:00'),
+(132, 346, 2, 'P', '13:45:00', '14:00:00'),
+(133, 346, 2, 'P', '14:00:00', '14:15:00'),
+(134, 346, 2, 'P', '14:15:00', '14:30:00'),
+(135, 346, 2, 'P', '14:30:00', '14:45:00'),
+(136, 346, 2, 'P', '14:45:00', '15:00:00'),
+(137, 346, 2, 'P', '15:00:00', '15:15:00'),
+(138, 346, 2, 'P', '15:15:00', '15:30:00'),
+(139, 346, 2, 'P', '15:30:00', '15:45:00'),
+(140, 346, 2, 'P', '15:45:00', '16:00:00'),
+(141, 346, 2, 'P', '16:00:00', '16:15:00'),
+(142, 346, 2, 'P', '16:15:00', '16:30:00'),
+(143, 346, 2, 'P', '16:30:00', '16:45:00'),
+(144, 346, 2, 'P', '16:45:00', '17:00:00'),
+(145, 346, 2, 'P', '17:00:00', '17:15:00'),
+(146, 346, 2, 'P', '17:15:00', '17:30:00'),
+(147, 346, 2, 'P', '17:30:00', '17:45:00'),
+(148, 346, 2, 'P', '17:45:00', '18:00:00'),
+(149, 346, 2, 'P', '18:00:00', '18:15:00'),
+(150, 346, 2, 'P', '18:15:00', '18:30:00'),
+(151, 346, 2, 'P', '18:30:00', '18:45:00'),
+(152, 346, 2, 'P', '18:45:00', '19:00:00'),
+(153, 346, 2, 'P', '19:00:00', '19:15:00'),
+(154, 346, 2, 'P', '19:15:00', '19:30:00'),
+(155, 346, 2, 'P', '19:30:00', '19:45:00'),
+(156, 346, 2, 'P', '19:45:00', '20:00:00'),
+(157, 346, 2, 'P', '20:00:00', '20:15:00'),
+(158, 346, 2, 'P', '20:15:00', '20:30:00'),
+(159, 346, 2, 'P', '20:30:00', '20:45:00'),
+(160, 346, 2, 'P', '20:45:00', '21:00:00'),
+(161, 347, 2, 'P', '11:00:00', '11:15:00'),
+(162, 347, 2, 'P', '11:15:00', '11:30:00'),
+(163, 347, 2, 'P', '11:30:00', '11:45:00'),
+(164, 347, 2, 'P', '11:45:00', '12:00:00'),
+(165, 347, 2, 'P', '12:00:00', '12:15:00'),
+(166, 347, 2, 'P', '12:15:00', '12:30:00'),
+(167, 347, 2, 'P', '12:30:00', '12:45:00'),
+(168, 347, 2, 'P', '12:45:00', '13:00:00'),
+(169, 347, 2, 'P', '13:00:00', '13:15:00'),
+(170, 347, 2, 'P', '13:15:00', '13:30:00'),
+(171, 347, 2, 'P', '13:30:00', '13:45:00'),
+(172, 347, 2, 'P', '13:45:00', '14:00:00'),
+(173, 347, 2, 'P', '14:00:00', '14:15:00'),
+(174, 347, 2, 'P', '14:15:00', '14:30:00'),
+(175, 347, 2, 'P', '14:30:00', '14:45:00'),
+(176, 347, 2, 'P', '14:45:00', '15:00:00'),
+(177, 347, 2, 'P', '15:00:00', '15:15:00'),
+(178, 347, 2, 'P', '15:15:00', '15:30:00'),
+(179, 347, 2, 'P', '15:30:00', '15:45:00'),
+(180, 347, 2, 'P', '15:45:00', '16:00:00'),
+(181, 347, 2, 'P', '16:00:00', '16:15:00'),
+(182, 347, 2, 'P', '16:15:00', '16:30:00'),
+(183, 347, 2, 'P', '16:30:00', '16:45:00'),
+(184, 347, 2, 'P', '16:45:00', '17:00:00');
+
+--
+-- Disparadores `oferta_hor`
+--
+DROP TRIGGER IF EXISTS `TR_LOG_OH_INS`;
+DELIMITER //
+CREATE TRIGGER `TR_LOG_OH_INS` AFTER INSERT ON `oferta_hor`
+ FOR EACH ROW BEGIN 
+DECLARE DATOSA varchar(500);
+DECLARE DATOSD varchar(500);
+DECLARE RUT varchar(20);
+DECLARE INST varchar(20); 
+DECLARE FECHA timestamp;
+DECLARE TABLA varchar(20);
+DECLARE TEMP int;
+SET TEMP= NEW.ID_OFERTA_HOR;
+SET DATOSD= (SELECT CONCAT(CAST(TEMP AS CHAR),',',CAST(NEW.ID_CAL AS CHAR),',',CAST(NEW.ID_VET AS CHAR),',',NEW.ESTADO_AGENDAMIENTO,',',CAST(NEW.HORA_INICIO AS CHAR),',',CAST(NEW.HORA_TERMINO AS CHAR)));
+SET INST= 'INSERT';
+SET TABLA = 'OFERTA_HOR';
+SET RUT = (SELECT V.RUT_VET FROM vet as V  WHERE NEW.ID_VET = V.ID_VET LIMIT 1);
+SET FECHA = CURRENT_TIMESTAMP();
+INSERT INTO `log_sql`(`ID_LOG`, `RUT_USUARIO`, `TABLA`, `INSTRUCCION`, `DATOS_ANTES`, `DATOS_DESPUES`, `FECHA_MOD`) VALUES (NULL,RUT,TABLA,INST,NULL,DATOSD,FECHA);
+
+
+END
+//
+DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -7041,15 +6528,7 @@ CREATE TABLE IF NOT EXISTS `orden_ex` (
   PRIMARY KEY (`ID_ORDEN_EX`),
   KEY `FK_ES_UN` (`ID_TIPO_EX`),
   KEY `FK_PUEDE_REQUERIR3` (`ID_ATENCION`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que registra los datos de una orden de examen realiz' AUTO_INCREMENT=6 ;
-
---
--- Volcado de datos para la tabla `orden_ex`
---
-
-INSERT INTO `orden_ex` (`ID_ORDEN_EX`, `ID_TIPO_EX`, `ID_ATENCION`, `FECHA_ORDEN_EX`, `MOTIVO_EX`, `PLAZO_SUGERIDO`, `OBS_ORDEN_EX`) VALUES
-(4, 1, 2, '2014-11-30', 'Orden de Prueba', 'Orden de Prueba', 'Orden de Prueba'),
-(5, 1, 2, '2014-12-06', '', '', '');
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que registra los datos de una orden de examen realiz' AUTO_INCREMENT=2 ;
 
 -- --------------------------------------------------------
 
@@ -7066,15 +6545,14 @@ CREATE TABLE IF NOT EXISTS `orden_hosp` (
   `FECHA_SUGERIDA_HOSP` date NOT NULL COMMENT 'Indica una fecha estimada en la cual la mascota debe ser hospitalizada.',
   PRIMARY KEY (`ID_ORDEN_HOSP`),
   KEY `FK_PUEDE_REQUERIR` (`ID_ATENCION`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que registra los datos de una orden de hospitalizaci' AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que registra los datos de una orden de hospitalizaci' AUTO_INCREMENT=2 ;
 
 --
 -- Volcado de datos para la tabla `orden_hosp`
 --
 
 INSERT INTO `orden_hosp` (`ID_ORDEN_HOSP`, `ID_ATENCION`, `FECHA_ORDEN_HOSP`, `DURACION_ESTIMADA_HOSP`, `MOTIVO_HOSP`, `FECHA_SUGERIDA_HOSP`) VALUES
-(2, 2, '2014-11-30 05:52:00', 'Orden de Prueba', 'Orden de Prueba', '2014-11-30'),
-(3, 2, '2014-12-06 03:04:00', '', '', '2014-12-06');
+(1, 9, '2014-12-08 05:10:00', '1 día', 'Post operatorio', '2014-12-08');
 
 -- --------------------------------------------------------
 
@@ -7093,15 +6571,15 @@ CREATE TABLE IF NOT EXISTS `orden_int` (
   PRIMARY KEY (`ID_ORDEN_INT`),
   KEY `FK_PUEDE_NECESITAR` (`ID_ATENCION`),
   KEY `FK_TIENE10` (`ID_TIPO_INT`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que registra los datos de una orden de intervenci' AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que registra los datos de una orden de intervenci' AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `orden_int`
 --
 
 INSERT INTO `orden_int` (`ID_ORDEN_INT`, `ID_ATENCION`, `ID_TIPO_INT`, `FECHA_SUGERIDA_INT`, `MOTIVO_INT`, `FECHA_ORDEN_INT`, `DURACION_ESTIMADA_INT`) VALUES
-(2, 2, 1, '2014-11-30', 'Orden de Prueba', '2014-11-30 05:53:00', 'Orden de Prueba'),
-(3, 2, 1, '2014-12-06', '', '2014-12-06 03:04:00', '');
+(1, 6, 38, '2014-12-12', 'Tumor en la traquea', '2014-12-08 03:10:00', '2 horas'),
+(2, 9, 2, '2014-12-08', 'El cliente solicitó una esterilización', '2014-12-08 05:08:00', '2 horas');
 
 -- --------------------------------------------------------
 
@@ -7113,11 +6591,11 @@ CREATE TABLE IF NOT EXISTS `par` (
   `ID_PAR` int(11) NOT NULL AUTO_INCREMENT COMMENT 'Identificador ?nico de par?metro\r\n            ',
   `TAM_BLOQUE` int(11) NOT NULL COMMENT 'Indica el valor entero del la duraci?n de un bloque de atenci?n en minutos',
   `INICIO_VIGENCIA` date NOT NULL COMMENT 'Fecha de inicio que indica la vigencia para el par?metro',
-  `FIN_VIGENCIA` date DEFAULT NULL COMMENT 'Fecha de fin que indica la vigencia para el par?metro',
-  `IN_SEMANA` time DEFAULT NULL,
-  `FIN_SEMANA` time DEFAULT NULL,
-  `IN_SAB` time DEFAULT NULL,
-  `FIN_SAB` time DEFAULT NULL,
+  `FIN_VIGENCIA` date NOT NULL COMMENT 'Fecha de fin que indica la vigencia para el par?metro',
+  `IN_SEMANA` time NOT NULL,
+  `FIN_SEMANA` time NOT NULL,
+  `IN_SAB` time NOT NULL,
+  `FIN_SAB` time NOT NULL,
   PRIMARY KEY (`ID_PAR`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa los par?metros necesarios\r\n' AUTO_INCREMENT=2 ;
 
@@ -7282,20 +6760,10 @@ CREATE TABLE IF NOT EXISTS `pat_atencion` (
 --
 
 INSERT INTO `pat_atencion` (`ID_ATENCION`, `ID_PAT`) VALUES
-(31, 1),
-(33, 1),
-(31, 2),
-(32, 2),
-(33, 2),
-(25, 3),
-(31, 3),
-(32, 3),
-(33, 3),
-(2, 4),
-(30, 4),
-(32, 4),
-(33, 4),
-(32, 5);
+(4, 4),
+(7, 4),
+(9, 4),
+(6, 113);
 
 -- --------------------------------------------------------
 
@@ -7486,7 +6954,7 @@ INSERT INTO `pres` (`ID_PRES`, `ID_TIPO_PRES`, `NOMBRE_PRES`, `NUMERO_BLOQUES`, 
 (33, 1, 'Administración de fármaco', 1, 0),
 (34, 1, 'Flores Bach', 2, 10000),
 (35, 1, 'Acupuntura', 4, 15000),
-(36, 0, 'Bano sanitario', 1, 8000),
+(36, 0, 'Bano sanitario', 2, 8000),
 (37, 0, 'Baño estético', 3, 8000),
 (38, 0, 'Corte de pelo', 3, 12000),
 (39, 0, 'Corte de uñas', 1, 3000),
@@ -7507,16 +6975,14 @@ CREATE TABLE IF NOT EXISTS `proc` (
   `FECHA_SGTE_PROC` date DEFAULT NULL COMMENT 'Indica la fecha del siguiente procedimiento',
   PRIMARY KEY (`ID_PROC`),
   KEY `FK_PUEDE_GENERAR_UN` (`ID_ATENCION`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa el procedimiento realizado en una ate' AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa el procedimiento realizado en una ate' AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `proc`
 --
 
 INSERT INTO `proc` (`ID_PROC`, `ID_ATENCION`, `OBS_PROC`, `FECHA_SGTE_PROC`) VALUES
-(1, 2, 'Prueba', '2015-01-01'),
-(2, 26, 'Próxima vacuna antirrábica', '2015-09-23'),
-(3, 31, 'Vacunación anual parvo virus siguiente sesión', '2015-12-08');
+(2, 4, 'Se necesita saber la evolución del paciente. Fecha de próximo control', '2014-12-15');
 
 -- --------------------------------------------------------
 
@@ -7531,21 +6997,16 @@ CREATE TABLE IF NOT EXISTS `rec_med` (
   `OBS_RECETA` varchar(200) DEFAULT NULL COMMENT 'Observaciones que se quieran agregar a la receta',
   PRIMARY KEY (`ID_RECETA`),
   KEY `FK_TIENE18` (`ID_ATENCION`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa una receta m?dica\r\n' AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 COMMENT='Entidad que representa una receta m?dica\r\n' AUTO_INCREMENT=5 ;
 
 --
 -- Volcado de datos para la tabla `rec_med`
 --
 
 INSERT INTO `rec_med` (`ID_RECETA`, `ID_ATENCION`, `TIPO`, `OBS_RECETA`) VALUES
-(1, 2, 'R', 'Hola esto es una prueba'),
-(2, 2, 'M', 'Vacuna X'),
-(3, 2, 'R', 'Observación'),
-(16, 21, 'R', 'Hola'),
-(17, 21, 'R', 'Hola'),
-(18, 24, 'M', ''),
-(19, 31, 'M', 'Vacunación anual de parvo virus'),
-(20, 35, 'M', '');
+(2, 4, 'R', 'Reposo.'),
+(3, 5, 'M', ''),
+(4, 7, 'R', '');
 
 -- --------------------------------------------------------
 
@@ -7694,6 +7155,55 @@ INSERT INTO `tipo_de_int` (`ID_TIPO_INT`, `NOMBRE_TIPO_INT`) VALUES
 (128, 'Curación + anestesia + sutura'),
 (129, 'Herida profunda + anestesia + sutura');
 
+--
+-- Disparadores `tipo_de_int`
+--
+DROP TRIGGER IF EXISTS `TR_PROTEGE_TIPO_INT_DEL`;
+DELIMITER //
+CREATE TRIGGER `TR_PROTEGE_TIPO_INT_DEL` BEFORE DELETE ON `tipo_de_int`
+ FOR EACH ROW BEGIN
+DECLARE TIPO int;
+DECLARE NOMBRE1 varchar(50);
+DECLARE NOMBRE2 varchar(50);
+DECLARE specialty CONDITION FOR SQLSTATE '45000';
+SET TIPO= OLD.ID_TIPO_INT;
+SET NOMBRE1 = 'Castración felina';
+SET NOMBRE2 = 'Castración canina';
+IF(TIPO=1)
+THEN
+SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Esa fila no se puede borrar';
+
+ELSEIF(TIPO=2)
+THEN
+SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Esa fila no se puede borrar';
+END IF;
+END
+//
+DELIMITER ;
+DROP TRIGGER IF EXISTS `TR_PROTEGE_TIPO_INT_UPD`;
+DELIMITER //
+CREATE TRIGGER `TR_PROTEGE_TIPO_INT_UPD` BEFORE UPDATE ON `tipo_de_int`
+ FOR EACH ROW BEGIN
+DECLARE TIPO int;
+DECLARE specialty CONDITION FOR SQLSTATE '45000';
+SET TIPO= OLD.ID_TIPO_INT;
+
+IF(TIPO=1)
+THEN
+SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Esa fila no se puede modificar';
+
+ELSEIF(TIPO=2)
+THEN
+SIGNAL SQLSTATE '45000'
+      SET MESSAGE_TEXT = 'Esa fila no se puede modificar';
+END IF;
+END
+//
+DELIMITER ;
+
 -- --------------------------------------------------------
 
 --
@@ -7830,6 +7340,38 @@ INSERT INTO `tipo_pres` (`ID_TIPO_PRES`, `NOMBRE_TIPO_PRES`) VALUES
 (3, 'Vacuna'),
 (4, 'Desparacitación');
 
+--
+-- Disparadores `tipo_pres`
+--
+DROP TRIGGER IF EXISTS `TR_PROTEGE_TIPO_PRES_DEL`;
+DELIMITER //
+CREATE TRIGGER `TR_PROTEGE_TIPO_PRES_DEL` BEFORE DELETE ON `tipo_pres`
+ FOR EACH ROW BEGIN
+DECLARE TIPO int;
+DECLARE specialty CONDITION FOR SQLSTATE '45000';
+SET TIPO= OLD.ID_TIPO_PRES;
+IF(TIPO=2) THEN
+	SIGNAL SQLSTATE '45000'
+    	SET MESSAGE_TEXT = 'Esa fila no se puede borrar';
+        END IF;
+END
+//
+DELIMITER ;
+DROP TRIGGER IF EXISTS `TR_PROTEGE_TIPO_PRES_UPD`;
+DELIMITER //
+CREATE TRIGGER `TR_PROTEGE_TIPO_PRES_UPD` BEFORE UPDATE ON `tipo_pres`
+ FOR EACH ROW BEGIN
+DECLARE TIPO int;
+DECLARE specialty CONDITION FOR SQLSTATE '45000';
+SET TIPO= OLD.ID_TIPO_PRES;
+IF(TIPO=2) THEN
+	SIGNAL SQLSTATE '45000'
+    	SET MESSAGE_TEXT = 'Esa fila no se puede modificar';
+        END IF;
+END
+//
+DELIMITER ;
+
 -- --------------------------------------------------------
 
 --
@@ -7859,9 +7401,9 @@ CREATE TABLE IF NOT EXISTS `vet` (
 
 INSERT INTO `vet` (`ID_VET`, `ID_GROUP`, `RUT_VET`, `NOMBRE_VET`, `APELLIDO_PVET`, `APELLIDO_MVET`, `TEL_VET`, `DIR_VET`, `MAIL_VET`, `FECHA_REGISTRO_VET`, `HABILITADO`, `PASSWORD_VET`) VALUES
 (1, 2, '3.556.975-8', 'JUAN', 'PEREZ', 'PEREZ', '123123', 'CASA CASITA VILLA VILLITA', 'JUAN@PEREZ.CL', '2014-11-07', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(2, 2, '21.930.126-K', 'Juan', 'Pablo', 'Rodriguez', '234234', 'Amunategui 1232 Santiago Centro', 'juan.pedro@usach.cl', '2014-11-05', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(3, 3, '16.339.894-K', 'Carlos', 'Vargas', 'Vargas', '5432341', 'Villa San Francisco #1423 Villa Comercio', 'carlos.vargas@gmail.com', '2014-11-07', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
-(5, 2, '18.023.678-3', 'Mariana', 'Aguilar', 'Gajardo', '234234', 'Santiago Centro', 'mariana.aguilar@usach.cl', '2014-12-01', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(2, 2, '21.930.126-K', 'JUAN', 'PABLO', 'RODRIGUEZ', '234234', 'Amunategui 1232 Santiago Centro', 'juan.pedro@usach.cl', '2014-11-05', 1, '7c4a8d09ca3762af61e59520943dc26494f8941b'),
+(3, 3, '16.339.894-K', 'CARLOS', 'VARGAS', 'VARGAS', '5432341', 'Villa San Francisco #1423 Villa Comercio', 'carlos.vargas@gmail.com', '2014-11-07', 1, '20eabe5d64b0e216796e834f52d61fd0b70332fc'),
+(5, 2, '18.023.678-3', 'MARIANA', 'AGUILAR', 'GAJARDO', '234234', 'Santiago Centro', 'mariana.aguilar@usach.cl', '2014-12-01', 1, '20eabe5d64b0e216796e834f52d61fd0b70332fc'),
 (6, 2, '18.641.830-1', 'CAMILA', 'ROMAN', 'GARCIA', '71234567', 'ESPERANZA 651 DEP 19', 'micorreo03@yopmail.com', '2014-12-01', 0, '7c4a8d09ca3762af61e59520943dc26494f8941b');
 
 --
@@ -7881,7 +7423,7 @@ ALTER TABLE `agenda`
 --
 ALTER TABLE `atencion`
   ADD CONSTRAINT `FK_ES_UN2` FOREIGN KEY (`ID_PRES`) REFERENCES `pres` (`ID_PRES`),
-  ADD CONSTRAINT `FK_REALIZA2` FOREIGN KEY (`ID_TIPO_PRES`) REFERENCES `tipo_pres` (`ID_TIPO_PRES`),
+  ADD CONSTRAINT `FK_REALIZA2` FOREIGN KEY (`ID_VET`) REFERENCES `vet` (`ID_VET`),
   ADD CONSTRAINT `FK_REGISTRA2` FOREIGN KEY (`ID_MAS`) REFERENCES `ficha` (`ID_MAS`);
 
 --
